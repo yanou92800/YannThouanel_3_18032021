@@ -1,5 +1,38 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18vw;
+}
+
+.logo {
+  width: 44vw;
+}
+
 body {
+  font-family: "Roboto";
   margin: 0;
+}
+
+.container {
+  font-size: 4.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16vw;
+  background: #f2f2f2;
+}
+
+.fas {
+  color: #4d4d4d;
+  margin: 0vw 5vw 1vw 0;
+}
+
+.localisation {
+  display: flex;
+  align-items: center;
+  width: 46vw;
+  height: 10vw;
 }
 
 /*# sourceMappingURL=style.css.map */
