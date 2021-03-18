@@ -1,0 +1,18 @@
+@import "./Utils/variables.scss";
+@import "./Layout/form.scss";
+@import "./Utils/functions.scss";
+@import "./Utils/mixins.scss";
+@import "./Utils/extensions.scss";
+@import "./Base/base.scss";
+@import "./Base/typography.scss";
+@import "./Composants/buttons.scss";
+@import "./Layout/header.scss";
+@import "./Layout/nav.scss";
+@import "./Layout/container.scss";
+@import "./Pages/work.scss";
+@import "./Pages/about.scss";
+@import "./Pages/project.scss";
+
+body {
+    margin: 0;
+}
