@@ -33,6 +33,11 @@ main {
   font-family: "Roboto";
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .fas {
   color: #4d4d4d;
   margin: 0vw 5vw 1vw 0;
@@ -45,12 +50,13 @@ img {
 .lieu {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background: #f2f2f2;
 }
 .lieu__localisation {
   width: 100%;
-  font-size: 4.5vw;
+  font-size: 4.6vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,7 +72,7 @@ img {
   margin: 10vw 0 16vw 0;
 }
 .lieu__présentation p {
-  font-size: 4.7vw;
+  font-size: 4.6vw;
   text-align: center;
 }
 
@@ -74,6 +80,106 @@ h1 {
   margin: 0;
   text-align: center;
   font-size: 7vw;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12vw;
+}
+.fonctionnement__div {
+  width: 86vw;
+  height: 20vw;
+  background-color: #f7f7f7;
+  box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
+  margin-bottom: 6vw;
+  border-radius: 5.4vw;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.fonctionnement__div:hover {
+  background-color: #f2eafb;
+}
+.fonctionnement h2 {
+  font-size: 6.5vw;
+  width: 90vw;
+}
+.fonctionnement span {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #9356dc;
+  width: 6.2vw;
+  height: 6.2vw;
+  border-radius: 100%;
+  font-size: 3vw;
+  color: white;
+  margin-left: -2.5vw;
+  margin-right: 5vw;
+}
+.fonctionnement p {
+  font-size: 4.6vw;
+}
+
+.restaurant {
+  background: #f2f2f2;
+  padding: 4.5vw;
+}
+.restaurant__div {
+  height: 67vw;
+  border-radius: 6vw;
+  margin-bottom: 6vw;
+  background-color: white;
+  box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
+  position: relative;
+}
+.restaurant .nouveau {
+  background-color: #99e2d0;
+  width: 21.5vw;
+  height: 7.5vw;
+  display: flex;
+  border-radius: 0.5vw;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin: 4vw 0vw 0vw 66vw;
+  font-size: 3.5vw;
+  font-weight: 700;
+  color: #278870;
+}
+.restaurant img {
+  width: 100%;
+  height: 47vw;
+  border-radius: 6vw 6vw 0 0;
+}
+.restaurant__heart {
+  position: absolute;
+  font-size: 6.4vw;
+  right: 8%;
+  margin-top: 1.7vw;
+}
+.restaurant h3 {
+  margin-top: 1.5vw;
+  margin-bottom: 1vw;
+  font-size: 5vw;
+}
+.restaurant .restaurant p {
+  margin-top: 0.5vw;
+  margin-bottom: 0;
+  font-size: 4.6vw;
+}
+
+.restaurant__div div {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  margin-left: 2%;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
