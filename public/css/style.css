@@ -22,17 +22,16 @@ body {
   height: 16vw;
   background: #f2f2f2;
 }
-
-.fas {
-  color: #4d4d4d;
-  margin: 0vw 5vw 1vw 0;
-}
-
-.localisation {
+.container__localisation {
   display: flex;
   align-items: center;
   width: 46vw;
   height: 10vw;
+}
+
+.fas {
+  color: #4d4d4d;
+  margin: 0vw 5vw 1vw 0;
 }
 
 /*# sourceMappingURL=style.css.map */

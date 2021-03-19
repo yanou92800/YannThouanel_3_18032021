@@ -12,6 +12,7 @@
 @import "./Pages/work.scss";
 @import "./Pages/about.scss";
 @import "./Pages/project.scss";
+@import "./Utils/keyframes.scss";
 
 body {
   font-family: "Roboto";
@@ -24,14 +25,15 @@ body {
   align-items: center;
   height: 16vw;
   background: darken($color: white, $amount: 5);
+  
+&__localisation {
+    display: flex;
+    align-items: center;
+    width: 46vw;
+    height: 10vw;
+  }
 }
 .fas {
   color: lighten($color: black, $amount: 30);
   margin: 0vw 5vw 1vw 0;
-}
-.localisation {
-  display: flex;
-  align-items: center;
-  width: 46vw;
-  height: 10vw;
 }
