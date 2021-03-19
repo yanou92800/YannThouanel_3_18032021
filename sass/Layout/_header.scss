@@ -1,9 +1,11 @@
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 18vw;
-}
-.logo {
-    width: 44vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 17vw;
+
+  .logo {
+    font-family: "Shrikhand";
+    font-size: 8vw;
+  }
 }

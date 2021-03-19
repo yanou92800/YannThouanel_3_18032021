@@ -1,37 +1,79 @@
+@charset "UTF-8";
+.boutton {
+  width: 56vw;
+  height: 13vw;
+  font-size: 4vw;
+  color: white;
+  background: linear-gradient(357deg, #9356dc, #ff79da);
+  border: none;
+  box-shadow: 0vw 1vw 2vw 1vw #d1d1d1;
+  border-radius: 25vw;
+  margin-top: 5vw;
+}
+.boutton:hover {
+  background: linear-gradient(357deg, #a16be0, #ff93e1);
+}
+
 header {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 18vw;
+  height: 17vw;
 }
-
-.logo {
-  width: 44vw;
+header .logo {
+  font-family: "Shrikhand";
+  font-size: 8vw;
 }
 
 body {
-  font-family: "Roboto";
   margin: 0;
 }
 
-.container {
-  font-size: 4.5vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 16vw;
-  background: #f2f2f2;
-}
-.container__localisation {
-  display: flex;
-  align-items: center;
-  width: 46vw;
-  height: 10vw;
+main {
+  font-family: "Roboto";
 }
 
 .fas {
   color: #4d4d4d;
   margin: 0vw 5vw 1vw 0;
+}
+
+img {
+  width: 90vw;
+}
+
+.lieu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f2f2f2;
+}
+.lieu__localisation {
+  width: 100%;
+  font-size: 4.5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13vw;
+  background: #e6e6e6;
+  box-shadow: inset 0vw 3vw 1vw -2vw #d1d1d1;
+}
+.lieu__présentation {
+  width: 82vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10vw 0 16vw 0;
+}
+.lieu__présentation p {
+  font-size: 4.7vw;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+  font-size: 7vw;
 }
 
 /*# sourceMappingURL=style.css.map */
