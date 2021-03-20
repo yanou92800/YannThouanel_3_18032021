@@ -1,0 +1,29 @@
+.lieu {
+    @include centercolumnbyflex;
+  
+    &__localisation {
+      width: 100%;
+      font-size: $font-size;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 13vw;
+      background: darken($color: white, $amount: 10);
+      box-shadow: inset 0vw 3vw 1vw -2vw rgb(209, 209, 209);
+  
+      &__logo {
+        color: lighten($color: black, $amount: 30);
+        margin: 0vw 5vw 1vw 0;
+      }
+    }
+  
+    &__présentation {
+      background: darken($color: white, $amount: 5);
+      @include centercolumnbyflex;
+      padding: 10vw 0 16vw 0;
+      p {
+        font-size: $font-size;
+        text-align: center;
+      }
+    }
+  }
