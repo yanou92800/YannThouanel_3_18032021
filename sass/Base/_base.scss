@@ -1,11 +1,19 @@
 body {
     margin: 0;
-  }
-  
-  main {
     font-family: "Roboto";
   }
-  a {
+header a {
     text-decoration: none;
     color: black;
+  }
+  main a {
+    text-decoration: none;
+    color: black;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  a {
+    cursor: pointer;
   }

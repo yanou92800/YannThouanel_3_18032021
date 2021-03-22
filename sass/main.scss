@@ -23,6 +23,10 @@ h1 {
   text-align: center;
   font-size: $h1;
 }
+h2 {
+  font-size: $h2;
+  width: 90vw;
+}
 .fonctionnement {
   @include centercolumnbyflex;
   margin-bottom: 12vw;
@@ -38,13 +42,18 @@ h1 {
     display: flex;
     flex-direction: row;
     background: darken($color: white, $amount: 5);
+    cursor: pointer;
     &:hover {
       background-color: #f2eafb;
+      .fonctionnement__btn__logo {
+        color: #9356dc;
+      }
     }
-  }
-  h2 {
-    font-size: $h2;
-    width: 90vw;
+    &__logo {
+      color: lighten($color: black, $amount: 40);
+      font-size: 6vw;
+      margin-left: 2vw;
+    }
   }
   span {
     @include centercolumnbyflex;
@@ -59,7 +68,7 @@ h1 {
   }
   p {
     font-size: $font-size;
-    margin-left: 10vw;
+    margin-left: 8vw;
   }
 }
 .restaurant {
@@ -109,11 +118,31 @@ h1 {
   h3 {
     margin-top: 1.5vw;
     margin-bottom: 1vw;
-    font-size: 5vw;
+    font-size: $h3;
   }
   p {
     margin-top: 0.5vw;
     margin-bottom: 0;
     font-size: $font-size;
   }
+}
+footer {
+ color: white;
+ background: rgb(53, 53, 53);
+ height: 52vw;
+ display: flex;
+ flex-direction: column;
+ .logo {
+   font-family: "Shrikhand";
+   font-size: $h3;
+   margin: 5vw;
+ }
+ p {
+   margin: 0 0 2vw 0;
+   font-size: $font-size;
+   cursor: pointer;
+ }
+ div {
+   margin-left: 5vw;
+ }
 }

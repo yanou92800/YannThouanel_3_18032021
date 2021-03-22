@@ -1,15 +1,26 @@
 @charset "UTF-8";
 body {
   margin: 0;
-}
-
-main {
   font-family: "Roboto";
 }
 
-a {
+header a {
   text-decoration: none;
   color: black;
+}
+
+main a {
+  text-decoration: none;
+  color: black;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+a {
+  cursor: pointer;
 }
 
 .btn {
@@ -22,6 +33,7 @@ a {
   box-shadow: 0vw 1vw 2vw 1vw #d1d1d1;
   border-radius: 25vw;
   margin-top: 5vw;
+  cursor: pointer;
 }
 .btn:hover {
   background: linear-gradient(357deg, #a16be0, #ff93e1);
@@ -55,7 +67,7 @@ header .logo {
   box-shadow: inset 0vw 3vw 1vw -2vw #d1d1d1;
 }
 .lieu__localisation__logo {
-  color: #4d4d4d;
+  color: #666666;
   margin: 0vw 5vw 1vw 0;
 }
 .lieu__présentation {
@@ -81,6 +93,11 @@ h1 {
   font-size: 7vw;
 }
 
+h2 {
+  font-size: 6.5vw;
+  width: 90vw;
+}
+
 .fonctionnement {
   display: flex;
   flex-direction: column;
@@ -99,13 +116,18 @@ h1 {
   display: flex;
   flex-direction: row;
   background: #f2f2f2;
+  cursor: pointer;
 }
 .fonctionnement__btn:hover {
   background-color: #f2eafb;
 }
-.fonctionnement h2 {
-  font-size: 6.5vw;
-  width: 90vw;
+.fonctionnement__btn:hover .fonctionnement__btn__logo {
+  color: #9356dc;
+}
+.fonctionnement__btn__logo {
+  color: #666666;
+  font-size: 6vw;
+  margin-left: 2vw;
 }
 .fonctionnement span {
   display: flex;
@@ -123,7 +145,7 @@ h1 {
 }
 .fonctionnement p {
   font-size: 4.6vw;
-  margin-left: 10vw;
+  margin-left: 8vw;
 }
 
 .restaurant {
@@ -180,6 +202,27 @@ h1 {
   margin-top: 0.5vw;
   margin-bottom: 0;
   font-size: 4.6vw;
+}
+
+footer {
+  color: white;
+  background: #353535;
+  height: 52vw;
+  display: flex;
+  flex-direction: column;
+}
+footer .logo {
+  font-family: "Shrikhand";
+  font-size: 5vw;
+  margin: 5vw;
+}
+footer p {
+  margin: 0 0 2vw 0;
+  font-size: 4.6vw;
+  cursor: pointer;
+}
+footer div {
+  margin-left: 5vw;
 }
 
 /*# sourceMappingURL=style.css.map */
