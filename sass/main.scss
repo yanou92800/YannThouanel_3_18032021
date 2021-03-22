@@ -18,59 +18,15 @@
 img {
   width: 90vw;
 }
-h1 {
-  margin: 0 8vw;
-  text-align: center;
-  font-size: $h1;
-}
 h2 {
   font-size: $h2;
   width: 90vw;
 }
 .fonctionnement {
   @include centercolumnbyflex;
-  margin-bottom: 12vw;
-
-  &__btn {
-    width: 86vw;
-    height: 20vw;
-    background-color: #f7f7f7;
-    box-shadow: 0vw 1vw 2vw 1vw #dddcdc;
-    margin-bottom: 6vw;
-    border-radius: 5.4vw;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    background: darken($color: white, $amount: 5);
-    cursor: pointer;
-    &:hover {
-      background-color: #f2eafb;
-      .fonctionnement__btn__logo {
-        color: #9356dc;
-      }
-    }
-    &__logo {
-      color: lighten($color: black, $amount: 40);
-      font-size: 6vw;
-      margin-left: 2vw;
-    }
-  }
-  span {
-    @include centercolumnbyflex;
-    background-color: $color-primary;
-    width: 6.2vw;
-    height: 6.2vw;
-    border-radius: 100%;
-    font-size: 3vw;
-    color: white;
-    margin-left: -2.5vw;
-    margin-right: 5vw;
-  }
-  p {
-    font-size: $font-size;
-    margin-left: 8vw;
-  }
+  margin-bottom: 12vw; 
 }
+
 .restaurant {
   background: darken($color: white, $amount: 5);
   padding: 4.5vw;
@@ -83,18 +39,7 @@ h2 {
     position: relative;
   }
   .nouveau {
-    background-color: $color-tertiary;
-    width: 21.5vw;
-    height: 7.5vw;
-    display: flex;
-    border-radius: 0.5vw;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    margin: 4vw 0vw 0vw 66vw;
-    font-size: 3.5vw;
-    font-weight: 700;
-    color: #278870;
+    @include btnnouveau;
   }
   img {
     width: 100%;
@@ -104,16 +49,7 @@ h2 {
   &__menu {
     display: flex;
     flex-direction: column;
-    height: auto;
-    width: auto;
-    margin-left: 2%;
-    justify-content: center;
-  }
-  &__heart {
-    position: absolute;
-    font-size: 6.4vw;
-    right: 8%;
-    margin-top: 1.7vw;
+    margin-left: 3vw;
   }
   h3 {
     margin-top: 1.5vw;
@@ -123,26 +59,30 @@ h2 {
   p {
     margin-top: 0.5vw;
     margin-bottom: 0;
-    font-size: $font-size;
+    font-size: 3vw;
   }
 }
 footer {
- color: white;
- background: rgb(53, 53, 53);
- height: 52vw;
- display: flex;
- flex-direction: column;
- .logo {
-   font-family: "Shrikhand";
-   font-size: $h3;
-   margin: 5vw;
- }
- p {
-   margin: 0 0 2vw 0;
-   font-size: $font-size;
-   cursor: pointer;
- }
- div {
-   margin-left: 5vw;
- }
+  color: white;
+  background: rgb(53, 53, 53);
+  height: 52vw;
+  display: flex;
+  flex-direction: column;
+  .logo {
+    font-family: "Shrikhand";
+    margin: 5vw;
+    font-size: $h3;
+  }
+  p {
+    margin: 0 0 2vw 0;
+    font-size: 3vw;
+    cursor: pointer;
+  }
+  div {
+    margin-left: 5vw;
+    .logo--nav {
+      font-size: 4vw;
+      margin-right: 2vw;
+    }
+  }
 }

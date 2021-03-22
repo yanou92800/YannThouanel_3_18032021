@@ -1,4 +1,4 @@
-.btn {
+.banner__btn {
   width: 56vw;
   height: 13vw;
   font-size: 4vw;
@@ -11,5 +11,35 @@
   cursor: pointer;
   &:hover {
     background: linear-gradient(357deg, #a16be0, #ff93e1);
+  }
+}
+
+.fonctionnement__btn {
+  @include btnfonctionnement;
+  &:hover {
+    background-color: #f2eafb;
+    .fonctionnement__btn__logo {
+      color: #9356dc;
+    }
+  }
+  &__logo {
+    color: lighten($color: black, $amount: 40);
+    font-size: $h3;
+    margin-left: 2vw;
+  }
+  span {
+    @include centercolumnbyflex;
+    background-color: $color-primary;
+    width: 6.2vw;
+    height: 6.2vw;
+    border-radius: 100%;
+    font-size: 3vw;
+    color: white;
+    margin-left: -2.5vw;
+    margin-right: 5vw;
+  }
+  p {
+    font-size: 3vw;
+    margin-left: 8vw;
   }
 }
