@@ -5,15 +5,10 @@
 .fonctionnement__btn {
   @include btnfonctionnement;
   &:hover {
-    background-color: #f2eafb;
-    .fonctionnement__btn__logo {
-      color: #9356dc;
+    background-color: lighten($color: $color-primary, $amount: 35);
+    .fonctionnement__logo {
+      color: $color-primary;
     }
-  }
-  &__logo {
-    color: lighten($color: black, $amount: 40);
-    font-size: $h3;
-    margin-left: 2vw;
   }
   span {
     @include centercolumnbyflex;
@@ -27,7 +22,7 @@
     margin-right: 5vw;
   }
   p {
-    font-size: 3vw;
+    font-size: 4.3vw;
     margin-left: 8vw;
   }
 }

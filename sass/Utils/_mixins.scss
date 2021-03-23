@@ -7,7 +7,6 @@
 @mixin btnfonctionnement {
     width: 86vw;
     height: 20vw;
-    background-color: #f7f7f7;
     box-shadow: 0vw 1vw 2vw 1vw #dddcdc;
     margin-bottom: 6vw;
     border-radius: 5.4vw;
@@ -26,23 +25,24 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    margin: 4vw 0vw 0vw 66vw;
+    right: 4vw;
+    top: 4vw;
     font-size: 3.5vw;
     font-weight: 700;
-    color: #278870;
+    color: darken($color: $color-tertiary, $amount: 40);
 }
 @mixin btn {
     width: 56vw;
     height: 13vw;
     font-size: 4vw;
     color: white;
-    background: linear-gradient(357deg, #9356dc, #ff79da);
+    background: linear-gradient(357deg, $color-primary, $color-secondary);
     border: none;
     box-shadow: 0vw 1vw 2vw 1vw rgb(209, 209, 209);
     border-radius: 25vw;
     margin-top: 5vw;
     cursor: pointer;
     &:hover {
-      background: linear-gradient(357deg, #a16be0, #ff93e1);
+      background: linear-gradient(357deg, $color-primary-banner, $color-secondary-banner);
     }
 }

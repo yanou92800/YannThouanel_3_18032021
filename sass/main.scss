@@ -16,15 +16,21 @@
 @import "./Layout/home";
 
 img {
-  width: 90vw;
+  width: 100%;
 }
+
 h2 {
   font-size: $h2;
   width: 90vw;
 }
 .fonctionnement {
   @include centercolumnbyflex;
-  margin-bottom: 12vw; 
+  margin-bottom: 12vw;
+  &__logo {
+    color: lighten($color: black, $amount: 40);
+    font-size: $h3;
+    margin-left: 2vw;
+  }
 }
 
 .restaurant {
@@ -37,6 +43,16 @@ h2 {
     background-color: white;
     box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
     position: relative;
+  }
+  &__heart {
+    position: absolute;
+    right: 5vw;
+    bottom: 10vw;
+  }
+  &__heart--like {
+    position: absolute;
+    right: 5vw;
+    bottom: 10vw;
   }
   .nouveau {
     @include btnnouveau;
@@ -59,12 +75,12 @@ h2 {
   p {
     margin-top: 0.5vw;
     margin-bottom: 0;
-    font-size: 3vw;
+    font-size: $p;
   }
 }
 footer {
   color: white;
-  background: rgb(53, 53, 53);
+  background: lighten($color: black, $amount: 20);
   height: 52vw;
   display: flex;
   flex-direction: column;
