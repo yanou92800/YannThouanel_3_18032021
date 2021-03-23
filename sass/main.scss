@@ -1,19 +1,19 @@
-@import "./Utils/variables.scss";
-@import "./Layout/form.scss";
-@import "./Utils/functions.scss";
-@import "./Utils/mixins.scss";
-@import "./Utils/extensions.scss";
-@import "./Base/base.scss";
-@import "./Base/typography.scss";
-@import "./Composants/buttons.scss";
-@import "./Layout/header.scss";
-@import "./Layout/nav.scss";
-@import "./Layout/container.scss";
-@import "./Pages/work.scss";
-@import "./Pages/about.scss";
-@import "./Pages/project.scss";
-@import "./Utils/keyframes.scss";
-@import "./Layout/lieux";
+@import "./Utils/variables";
+@import "./Layout/form";
+@import "./Utils/functions";
+@import "./Utils/mixins";
+@import "./Utils/extensions";
+@import "./Base/base";
+@import "./Base/typography";
+@import "./Composants/buttons";
+@import "./Layout/header";
+@import "./Layout/nav";
+@import "./Layout/container";
+@import "./Pages/work";
+@import "./Pages/about";
+@import "./Pages/project";
+@import "./Utils/keyframes";
+@import "./Layout/home";
 
 img {
   width: 90vw;
@@ -78,11 +78,22 @@ footer {
     font-size: 3vw;
     cursor: pointer;
   }
-  div {
+  .nav {
     margin-left: 5vw;
-    .logo--nav {
+    &__logo {
       font-size: 4vw;
       margin-right: 2vw;
     }
+  }
+}
+.banner {
+  @include centercolumnbyflex;
+  background: darken($color: white, $amount: 5);
+  padding: 10vw 0 16vw 0;
+  text-align: center;
+  font-size: $h1;
+  &__title {
+    margin: 0;
+    width: 67vw;
   }
 }

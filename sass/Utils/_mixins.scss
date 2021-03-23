@@ -31,3 +31,18 @@
     font-weight: 700;
     color: #278870;
 }
+@mixin btn {
+    width: 56vw;
+    height: 13vw;
+    font-size: 4vw;
+    color: white;
+    background: linear-gradient(357deg, #9356dc, #ff79da);
+    border: none;
+    box-shadow: 0vw 1vw 2vw 1vw rgb(209, 209, 209);
+    border-radius: 25vw;
+    margin-top: 5vw;
+    cursor: pointer;
+    &:hover {
+      background: linear-gradient(357deg, #a16be0, #ff93e1);
+    }
+}
