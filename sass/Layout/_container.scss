@@ -29,11 +29,12 @@
     margin-bottom: 1vw;
     font-size: 4vw;
   }
-}
-.menu__entrance {
-  .bottomgreen {
+  &__bottomgreen {
     width: 12vw;
     border-bottom: 1vw solid $color-tertiary;
     margin-bottom: 3vw;
+  }
+  &__text {
+    margin-left: 3vw;
   }
 }

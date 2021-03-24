@@ -29,15 +29,7 @@
 .command__btn {
   @include btn;
 }
-.entrance__btn {
+.menu__btn {
   @include btnfonctionnement;
-  background: white;
-}
-.dish__btn {
-  @include btnfonctionnement;
-  background: white;
-}
-.dessert__btn {
-  @include btnfonctionnement; 
   background: white;
 }
