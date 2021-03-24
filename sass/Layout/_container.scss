@@ -1,0 +1,39 @@
+.menu {
+  @include centercolumnbyflex;
+  background: darken($color: white, $amount: 5);
+  border-radius: 12vw 12vw 0 0;
+  margin-top: -13vw;
+  position: relative;
+  &__title {
+    display: flex;
+    font-family: "Shrikhand";
+    margin-left: 4.5vw;
+    padding-top: 8vw;
+    font-size: 7.5vw;
+    width: 95vw;
+    font-weight: 500;
+    margin-bottom: 5vw;
+  }
+  &__heart {
+    position: absolute;
+    right: 10vw;
+    top: 10vw;
+  }
+  &__heart--like {
+    position: absolute;
+    right: 10vw;
+    top: 10vw;
+  }
+  h2 {
+    font-weight: 400;
+    margin-bottom: 1vw;
+    font-size: 4vw;
+  }
+}
+.menu__entrance {
+  .bottomgreen {
+    width: 12vw;
+    border-bottom: 1vw solid $color-tertiary;
+    margin-bottom: 3vw;
+  }
+}

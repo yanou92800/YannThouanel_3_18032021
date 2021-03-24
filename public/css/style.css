@@ -106,6 +106,7 @@ h1 {
   flex-direction: row;
   background: #f2f2f2;
   cursor: pointer;
+  background: white;
 }
 
 .dish__btn {
@@ -119,6 +120,7 @@ h1 {
   flex-direction: row;
   background: #f2f2f2;
   cursor: pointer;
+  background: white;
 }
 
 .dessert__btn {
@@ -132,6 +134,7 @@ h1 {
   flex-direction: row;
   background: #f2f2f2;
   cursor: pointer;
+  background: white;
 }
 
 header {
@@ -143,6 +146,55 @@ header {
 header .logo {
   font-family: "Shrikhand";
   font-size: 8vw;
+}
+header .arrow__logo {
+  font-size: 5vw;
+  position: absolute;
+  left: 6vw;
+  top: 6vw;
+  color: #333333;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f2f2f2;
+  border-radius: 12vw 12vw 0 0;
+  margin-top: -13vw;
+  position: relative;
+}
+.menu__title {
+  display: flex;
+  font-family: "Shrikhand";
+  margin-left: 4.5vw;
+  padding-top: 8vw;
+  font-size: 7.5vw;
+  width: 95vw;
+  font-weight: 500;
+  margin-bottom: 5vw;
+}
+.menu__heart {
+  position: absolute;
+  right: 10vw;
+  top: 10vw;
+}
+.menu__heart--like {
+  position: absolute;
+  right: 10vw;
+  top: 10vw;
+}
+.menu h2 {
+  font-weight: 400;
+  margin-bottom: 1vw;
+  font-size: 4vw;
+}
+
+.menu__entrance .bottomgreen {
+  width: 12vw;
+  border-bottom: 1vw solid #99E2D0;
+  margin-bottom: 3vw;
 }
 
 .home {
@@ -169,8 +221,21 @@ img {
 }
 
 h2 {
-  font-size: 4.3vw;
+  font-size: 6vw;
   width: 90vw;
+}
+
+h3 {
+  margin-top: 1.5vw;
+  margin-bottom: 1vw;
+  font-size: 5vw;
+}
+
+p {
+  margin-top: 0.5vw;
+  margin-bottom: 0;
+  font-size: 4.5vw;
+  font-weight: 300;
 }
 
 .fonctionnement {
@@ -233,16 +298,6 @@ h2 {
   flex-direction: column;
   margin-left: 3vw;
 }
-.restaurant h3 {
-  margin-top: 1.5vw;
-  margin-bottom: 1vw;
-  font-size: 5vw;
-}
-.restaurant p {
-  margin-top: 0.5vw;
-  margin-bottom: 0;
-  font-size: 4.5vw;
-}
 
 footer {
   color: white;
@@ -274,7 +329,6 @@ footer .nav__logo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #f2f2f2;
   padding: 10vw 0 16vw 0;
   text-align: center;
   font-size: 4.6vw;

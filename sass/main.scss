@@ -23,6 +23,17 @@ h2 {
   font-size: $h2;
   width: 90vw;
 }
+h3 {
+  margin-top: 1.5vw;
+  margin-bottom: 1vw;
+  font-size: $h3;
+}
+p {
+  margin-top: 0.5vw;
+  margin-bottom: 0;
+  font-size: $p;
+  font-weight: 300;
+}
 .fonctionnement {
   @include centercolumnbyflex;
   margin-bottom: 12vw;
@@ -67,16 +78,6 @@ h2 {
     flex-direction: column;
     margin-left: 3vw;
   }
-  h3 {
-    margin-top: 1.5vw;
-    margin-bottom: 1vw;
-    font-size: $h3;
-  }
-  p {
-    margin-top: 0.5vw;
-    margin-bottom: 0;
-    font-size: $p;
-  }
 }
 footer {
   color: white;
@@ -104,7 +105,6 @@ footer {
 }
 .banner {
   @include centercolumnbyflex;
-  background: darken($color: white, $amount: 5);
   padding: 10vw 0 16vw 0;
   text-align: center;
   font-size: $h1;

@@ -8,4 +8,11 @@ header {
     font-family: "Shrikhand";
     font-size: 8vw;
   }
+  .arrow__logo {
+    font-size: $h3;
+    position: absolute;
+    left: 6vw;
+    top: 6vw;
+    color: lighten($color: black, $amount: 20);
+  }
 }
