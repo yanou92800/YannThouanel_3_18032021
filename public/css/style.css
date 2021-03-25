@@ -110,7 +110,7 @@ h1 {
   width: 100%;
   overflow: hidden;
   transform-origin: top;
-  animation: menu__btn 1.5s;
+  animation: menu__btn 2s;
 }
 .menu__btn:hover .valid {
   transform: scaleX(1);
@@ -155,6 +155,10 @@ h1 {
 
 .menu__btn--3 {
   animation-duration: 1.5s;
+}
+
+.menu__btn--4 {
+  animation-duration: 2s;
 }
 
 header {
