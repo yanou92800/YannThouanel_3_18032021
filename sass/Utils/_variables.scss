@@ -7,3 +7,6 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-primary-banner: lighten($color: #9356dc, $amount: 5);
 $color-secondary-banner: lighten($color: #FF79DA, $amount: 5);
+$prog-bar-dur: 1000ms;
+$prog-bar-delay: 1000ms;
+$body-delay: $prog-bar-dur + $prog-bar-delay * 2;

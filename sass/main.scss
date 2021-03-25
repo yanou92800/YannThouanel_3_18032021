@@ -1,20 +1,48 @@
 @import "./Utils/variables";
-@import "./Layout/form";
 @import "./Utils/functions";
 @import "./Utils/mixins";
 @import "./Utils/extensions";
+@import "./Utils/keyframes";
 @import "./Base/base";
 @import "./Base/typography";
 @import "./Composants/buttons";
+@import "./Layout/home";
+@import "./Layout/form";
 @import "./Layout/header";
 @import "./Layout/nav";
 @import "./Layout/container";
 @import "./Pages/work";
 @import "./Pages/about";
 @import "./Pages/project";
-@import "./Utils/keyframes";
-@import "./Layout/home";
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress {
+  border: 0.5vw solid black;
+  padding: 1vw;
+  &__bar {
+    transform-origin: left;
+    transform: scaleX(0.5);
+    animation: progress-bar $prog-bar-dur $prog-bar-delay both;
+    background: $color-tertiary;
+    width: 50vw;
+    height: 2vw;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  margin-top: -5vw;
+  z-index: 1;
+  animation: body 0ms $body-delay both;
+  width: 100%;
+}
 img {
   width: 100%;
 }
@@ -85,6 +113,7 @@ footer {
   height: 52vw;
   display: flex;
   flex-direction: column;
+  width: 100%;
   .logo {
     font-family: "Shrikhand";
     margin: 5vw;
