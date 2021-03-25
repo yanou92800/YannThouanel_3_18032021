@@ -25,12 +25,20 @@
     transform: scaleX(1);
   }
 }
-@keyframes body {
+@keyframes container {
   0% {
-    transform: translateX(-9999px);
+    transform: translateY(-9999px);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(5vw);
+  }
+}
+@keyframes progress {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
   }
 }
 body {
@@ -287,6 +295,10 @@ body {
 .progress {
   border: 0.5vw solid black;
   padding: 1vw;
+  position: fixed;
+  top: 50%;
+  animation: progress 0.5s forwards;
+  animation-delay: 2.5s;
 }
 .progress__bar {
   transform-origin: left;
@@ -304,7 +316,7 @@ body {
   overflow: hidden;
   margin-top: -5vw;
   z-index: 1;
-  animation: body 0ms 3000ms both;
+  animation: container 0ms 3000ms both;
   width: 100%;
 }
 
