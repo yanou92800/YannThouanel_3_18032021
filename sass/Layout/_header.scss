@@ -6,7 +6,13 @@ header {
 
   .logo {
     font-family: "Shrikhand";
-    font-size: 8vw;
+    font-size: $header-logo;
+    @include tablet {
+      font-size: $header-logo-tablet;
+    }
+    @include laptop {
+      font-size: $header-logo-laptop;
+    }
   }
   .arrow__logo {
     font-size: $h3;
@@ -14,5 +20,11 @@ header {
     left: 6vw;
     top: 6vw;
     color: lighten($color: black, $amount: 20);
+    @include tablet {
+      font-size: $h3-tablet;
+    }
+    @include laptop {
+      font-size: $h3-laptop;
+    }
   }
 }

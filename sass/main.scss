@@ -87,16 +87,6 @@ p {
     box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
     position: relative;
   }
-  &__heart {
-    position: absolute;
-    right: 5vw;
-    bottom: 10vw;
-  }
-  &__heart--like {
-    position: absolute;
-    right: 5vw;
-    bottom: 10vw;
-  }
   .nouveau {
     @include btnnouveau;
   }
@@ -109,6 +99,24 @@ p {
     display: flex;
     flex-direction: column;
     margin-left: 3vw;
+  }
+}
+.heart {
+  @include heart;
+  &--no {
+    z-index: 1;
+    &:hover {
+      opacity: 0;
+    }
+    &:hover + .heart--yes {
+      opacity: 1;
+    }
+  }
+  &--yes {
+    opacity: 0;
+    color: transparent;
+    background: linear-gradient(357deg, $color-primary, $color-secondary);
+    -webkit-background-clip: text;
   }
 }
 footer {

@@ -98,6 +98,18 @@ h1 {
   background: #f2f2f2;
   cursor: pointer;
 }
+@media (min-width: 426px) {
+  .fonctionnement__btn {
+    width: 68.8vw;
+    height: 15vw;
+  }
+}
+@media (min-width: 1024px) {
+  .fonctionnement__btn {
+    width: 43vw;
+    height: 10vw;
+  }
+}
 .fonctionnement__btn:hover {
   background-color: #f2eafb;
 }
@@ -155,6 +167,18 @@ h1 {
   overflow: hidden;
   transform-origin: top;
   animation: menu__btn 2s;
+}
+@media (min-width: 426px) {
+  .menu__btn {
+    width: 68.8vw;
+    height: 15vw;
+  }
+}
+@media (min-width: 1024px) {
+  .menu__btn {
+    width: 43vw;
+    height: 10vw;
+  }
 }
 .menu__btn:hover .valid {
   transform: scaleX(1);
@@ -234,12 +258,32 @@ header .logo {
   font-family: "Shrikhand";
   font-size: 8vw;
 }
+@media (min-width: 426px) {
+  header .logo {
+    font-size: 6vw;
+  }
+}
+@media (min-width: 1024px) {
+  header .logo {
+    font-size: 4vw;
+  }
+}
 header .arrow__logo {
   font-size: 5vw;
   position: absolute;
   left: 6vw;
   top: 6vw;
   color: #333333;
+}
+@media (min-width: 426px) {
+  header .arrow__logo {
+    font-size: 3.75vw;
+  }
+}
+@media (min-width: 1024px) {
+  header .arrow__logo {
+    font-size: 2.5vw;
+  }
 }
 
 .menu {
@@ -367,16 +411,6 @@ p {
   box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
   position: relative;
 }
-.restaurant__heart {
-  position: absolute;
-  right: 5vw;
-  bottom: 10vw;
-}
-.restaurant__heart--like {
-  position: absolute;
-  right: 5vw;
-  bottom: 10vw;
-}
 .restaurant .nouveau {
   background-color: #99E2D0;
   width: 21.5vw;
@@ -401,6 +435,28 @@ p {
   display: flex;
   flex-direction: column;
   margin-left: 3vw;
+}
+
+.heart {
+  position: absolute;
+  right: 8vw;
+  bottom: 8vw;
+  font-size: 7vw;
+}
+.heart--no {
+  z-index: 1;
+}
+.heart--no:hover {
+  opacity: 0;
+}
+.heart--no:hover + .heart--yes {
+  opacity: 1;
+}
+.heart--yes {
+  opacity: 0;
+  color: transparent;
+  background: linear-gradient(357deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
 }
 
 footer {
