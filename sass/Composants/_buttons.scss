@@ -38,7 +38,12 @@
   animation: menu__btn 2s;
   &:hover {
     .valid {
-      transform: scaleX(1);
+      margin: 0;
+      transition: 0.5s;
+    }
+    .valid__logo {
+      transform: rotate(360deg);
+      transition: 1s;
     }
   }
 }
@@ -47,18 +52,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform-origin: right;
-  transform: scaleX(0);
-  transition: all 0.6s;
   width: 15vw;
   height: 20vw;
   border-radius: 0vw 5.4vw 5.4vw 0vw;
-  position: absolute;
   right: 5vw;
+  margin: -16vw;
+  overflow: hidden;
   &__logo {
     color: $color-tertiary;
     background-color: white;
-    padding: 1vw;
+    padding: 2vw 0.5vw 0vw 1.5vw;
     width: 5vw;
     height: 5vw;
     display: flex;
@@ -66,8 +69,6 @@
     justify-content: center;
     align-items: center;
     border-radius: 20vw;
-    transform: rotate(360deg);
-    transition-duration: 1s;
   }
 }
 .menu__btn--1 {
