@@ -59,6 +59,7 @@ h3 {
   margin-top: 1.5vw;
   margin-bottom: 1vw;
   font-size: $h3;
+
 }
 p {
   margin-top: 0.5vw;
@@ -100,23 +101,24 @@ p {
     flex-direction: column;
     margin-left: 3vw;
   }
-}
-.heart {
-  @include heart;
-  &--no {
-    z-index: 1;
-    &:hover {
+  &__heart {
+    @include heart;
+    bottom: 8vw;
+    &--no {
+      z-index: 1;
+      &:hover {
+        opacity: 0;
+      }
+      &:hover + .restaurant__heart--yes {
+        opacity: 1;
+      }
+    }
+    &--yes {
       opacity: 0;
+      color: transparent;
+      background: linear-gradient(357deg, $color-primary, $color-secondary);
+      -webkit-background-clip: text;
     }
-    &:hover + .heart--yes {
-      opacity: 1;
-    }
-  }
-  &--yes {
-    opacity: 0;
-    color: transparent;
-    background: linear-gradient(357deg, $color-primary, $color-secondary);
-    -webkit-background-clip: text;
   }
 }
 footer {

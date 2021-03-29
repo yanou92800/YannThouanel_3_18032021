@@ -4,6 +4,9 @@
   border-radius: 12vw 12vw 0 0;
   margin-top: -13vw;
   position: relative;
+  &__container {
+    width: 95vw;
+  }
   &__title {
     display: flex;
     font-family: "Shrikhand";
@@ -14,20 +17,16 @@
     font-weight: 500;
     margin-bottom: 5vw;
   }
-  &__heart {
-    position: absolute;
-    right: 10vw;
-    top: 10vw;
-  }
-  &__heart--like {
-    position: absolute;
-    right: 10vw;
-    top: 10vw;
-  }
   h2 {
     font-weight: 400;
     margin-bottom: 1vw;
     font-size: 4vw;
+  }
+  h3 {
+    @include ellipsis;
+  }
+  p {
+    @include ellipsis;
   }
   &__bottomgreen {
     width: 12vw;
@@ -37,5 +36,26 @@
   &__text {
     margin-left: 3vw;
     flex: 1;
+    @include ellipsis;
+  }
+  &__heart {
+    @include heart;
+    right: 11vw;
+    top: 9vw;
+    &--no {
+      z-index: 1;
+      &:hover {
+        opacity: 0;
+      }
+      &:hover + .menu__heart--yes {
+        opacity: 1;
+      }
+    }
+    &--yes {
+      opacity: 0;
+      color: transparent;
+      background: linear-gradient(357deg, $color-primary, $color-secondary);
+      -webkit-background-clip: text;
+    }
   }
 }

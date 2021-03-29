@@ -11,9 +11,9 @@
     width: $width-btn-tablet;
     height: $height-btn-tablet;
   }
-  @include laptop {
-    width: $width-btn-laptop;
-    height: $height-btn-laptop;
+  @include desktop {
+    width: $width-btn-desktop;
+    height: $height-btn-desktop;
   }
   box-shadow: 0vw 1vw 2vw 1vw #dddcdc;
   margin-bottom: 6vw;
@@ -64,14 +64,18 @@
   }
 }
 
-@mixin laptop {
-  @media (min-width: #{$screen-laptop-min}) {
+@mixin desktop {
+  @media (min-width: #{$screen-desktop-min}) {
     @content;
   }
 }
 @mixin heart {
   position: absolute;
   right: 8vw;
-  bottom: 8vw;
   font-size: 7vw;
+}
+@mixin ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }

@@ -3,6 +3,12 @@ header {
   justify-content: center;
   align-items: center;
   height: 17vw;
+  @include tablet {
+    height: 12.75vw;
+  }
+  @include desktop {
+    height: 8.5vw;
+  }
 
   .logo {
     font-family: "Shrikhand";
@@ -10,8 +16,8 @@ header {
     @include tablet {
       font-size: $header-logo-tablet;
     }
-    @include laptop {
-      font-size: $header-logo-laptop;
+    @include desktop {
+      font-size: $header-logo-desktop;
     }
   }
   .arrow__logo {
@@ -23,8 +29,8 @@ header {
     @include tablet {
       font-size: $h3-tablet;
     }
-    @include laptop {
-      font-size: $h3-laptop;
+    @include desktop {
+      font-size: $h3-desktop;
     }
   }
 }

@@ -180,6 +180,12 @@ h1 {
     height: 10vw;
   }
 }
+.menu__btn .menu__price {
+  font-size: 4vw;
+  margin-right: 5vw;
+  margin-top: 8vw;
+  margin-left: 6vw;
+}
 .menu__btn:hover .valid {
   margin: 0;
   transition: 0.5s;
@@ -197,9 +203,7 @@ h1 {
   width: 15vw;
   height: 20vw;
   border-radius: 0vw 5.4vw 5.4vw 0vw;
-  right: 5vw;
-  margin: -16vw;
-  overflow: hidden;
+  margin-right: -15vw;
 }
 .valid__logo {
   color: #99E2D0;
@@ -207,10 +211,7 @@ h1 {
   padding: 2vw 0.5vw 0vw 1.5vw;
   width: 5vw;
   height: 5vw;
-  display: flex;
   font-size: 3.5vw;
-  justify-content: center;
-  align-items: center;
   border-radius: 20vw;
 }
 
@@ -255,6 +256,16 @@ header {
   align-items: center;
   height: 17vw;
 }
+@media (min-width: 426px) {
+  header {
+    height: 12.75vw;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    height: 8.5vw;
+  }
+}
 header .logo {
   font-family: "Shrikhand";
   font-size: 8vw;
@@ -297,6 +308,9 @@ header .arrow__logo {
   margin-top: -13vw;
   position: relative;
 }
+.menu__container {
+  width: 95vw;
+}
 .menu__title {
   display: flex;
   font-family: "Shrikhand";
@@ -307,20 +321,20 @@ header .arrow__logo {
   font-weight: 500;
   margin-bottom: 5vw;
 }
-.menu__heart {
-  position: absolute;
-  right: 10vw;
-  top: 10vw;
-}
-.menu__heart--like {
-  position: absolute;
-  right: 10vw;
-  top: 10vw;
-}
 .menu h2 {
   font-weight: 400;
   margin-bottom: 1vw;
   font-size: 4vw;
+}
+.menu h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu__bottomgreen {
   width: 12vw;
@@ -330,6 +344,31 @@ header .arrow__logo {
 .menu__text {
   margin-left: 3vw;
   flex: 1;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.menu__heart {
+  position: absolute;
+  right: 8vw;
+  font-size: 7vw;
+  right: 11vw;
+  top: 9vw;
+}
+.menu__heart--no {
+  z-index: 1;
+}
+.menu__heart--no:hover {
+  opacity: 0;
+}
+.menu__heart--no:hover + .menu__heart--yes {
+  opacity: 1;
+}
+.menu__heart--yes {
+  opacity: 0;
+  color: transparent;
+  background: linear-gradient(357deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
 }
 
 body {
@@ -384,7 +423,7 @@ h3 {
 p {
   margin-top: 0.5vw;
   margin-bottom: 0;
-  font-size: 4.5vw;
+  font-size: 4vw;
   font-weight: 300;
 }
 
@@ -438,23 +477,22 @@ p {
   flex-direction: column;
   margin-left: 3vw;
 }
-
-.heart {
+.restaurant__heart {
   position: absolute;
   right: 8vw;
-  bottom: 8vw;
   font-size: 7vw;
+  bottom: 8vw;
 }
-.heart--no {
+.restaurant__heart--no {
   z-index: 1;
 }
-.heart--no:hover {
+.restaurant__heart--no:hover {
   opacity: 0;
 }
-.heart--no:hover + .heart--yes {
+.restaurant__heart--no:hover + .restaurant__heart--yes {
   opacity: 1;
 }
-.heart--yes {
+.restaurant__heart--yes {
   opacity: 0;
   color: transparent;
   background: linear-gradient(357deg, #9356DC, #FF79DA);
