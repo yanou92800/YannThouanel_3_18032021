@@ -1,10 +1,10 @@
 .home {
   @include centercolumnbyflex;
   background: darken($color: white, $amount: 10);
-    box-shadow: inset 0vw 3vw 1vw -2vw rgb(209, 209, 209);
-    width: 100vw;
-    font-size: 4.3vw;
-    height: 13vw;
+  box-shadow: inset 0vw 3vw 1vw -2vw rgb(209, 209, 209);
+  width: 100vw;
+  font-size: 4.3vw;
+  height: 13vw;
   &__location {
     margin-right: 7vw;
   }
