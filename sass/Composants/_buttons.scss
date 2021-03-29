@@ -28,6 +28,7 @@
 }
 .command__btn {
   @include btn;
+  margin-bottom: 20vw;
 }
 .menu__btn {
   @include btnfonctionnement;

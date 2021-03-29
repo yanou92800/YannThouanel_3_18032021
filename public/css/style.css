@@ -146,6 +146,7 @@ h1 {
   border-radius: 25vw;
   margin-top: 5vw;
   cursor: pointer;
+  margin-bottom: 20vw;
 }
 .command__btn:hover {
   background: linear-gradient(357deg, #a16be0, #ff93e1);
@@ -238,16 +239,23 @@ h1 {
   align-items: center;
   background: #e6e6e6;
   box-shadow: inset 0vw 3vw 1vw -2vw #d1d1d1;
-  width: 100vw;
-  font-size: 4.3vw;
   height: 13vw;
 }
 .home__location {
-  margin-right: 7vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.home__location h2 {
+  font-size: 4.3vw;
+  width: 36vw;
 }
 .home__logo {
   color: #666666;
   margin: 0vw 5vw 1vw 0;
+  font-size: 4.3vw;
 }
 
 header {
@@ -335,6 +343,7 @@ header .arrow__logo {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  font-size: 4.4vw;
 }
 .menu__bottomgreen {
   width: 12vw;
@@ -402,7 +411,7 @@ body {
   margin-top: -5vw;
   z-index: 1;
   animation: container 0ms 3000ms both;
-  width: 100%;
+  margin-bottom: 5vw;
 }
 
 img {
@@ -425,7 +434,6 @@ p {
   margin-bottom: 0;
   font-size: 4.9vw;
   font-weight: 300;
-  width: 84vw;
 }
 
 .fonctionnement {
@@ -433,7 +441,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 12vw;
+  margin: 10vw 0 12vw 0;
 }
 .fonctionnement__logo {
   color: #666666;
@@ -443,7 +451,7 @@ p {
 
 .restaurant {
   background: #f2f2f2;
-  padding: 4.5vw;
+  padding: 10vw 4.5vw;
 }
 .restaurant__card {
   height: 67vw;
@@ -517,14 +525,14 @@ footer .logo {
 }
 footer p {
   margin: 0 0 2vw 0;
-  font-size: 3vw;
+  font-size: 4.5vw;
   cursor: pointer;
 }
 footer .nav {
   margin-left: 5vw;
 }
 footer .nav__logo {
-  font-size: 4vw;
+  font-size: 3.5vw;
   margin-right: 2vw;
 }
 
@@ -536,6 +544,7 @@ footer .nav__logo {
   padding: 10vw 0 16vw 0;
   text-align: center;
   font-size: 4.6vw;
+  background: #f2f2f2;
 }
 .banner__title {
   margin: 0 0 4vw 0;

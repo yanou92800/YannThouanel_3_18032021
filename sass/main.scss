@@ -45,7 +45,7 @@ body {
   margin-top: -5vw;
   z-index: 1;
   animation: container 0ms $container-delay both;
-  width: 100%;
+  margin-bottom: 5vw;
 }
 img {
   width: 100%;
@@ -65,11 +65,10 @@ p {
   margin-bottom: 0;
   font-size: 4.9vw;
   font-weight: 300;
-  width: 84vw;
 }
 .fonctionnement {
   @include centercolumnbyflex;
-  margin-bottom: 12vw;
+  margin: 10vw 0 12vw 0;
   &__logo {
     color: lighten($color: black, $amount: 40);
     font-size: $h3;
@@ -79,7 +78,7 @@ p {
 
 .restaurant {
   background: darken($color: white, $amount: 5);
-  padding: 4.5vw;
+  padding: 10vw 4.5vw;
   &__card {
     height: 67vw;
     border-radius: 6vw;
@@ -137,13 +136,13 @@ footer {
   }
   p {
     margin: 0 0 2vw 0;
-    font-size: 3vw;
+    font-size: 4.5vw;
     cursor: pointer;
   }
   .nav {
     margin-left: 5vw;
     &__logo {
-      font-size: 4vw;
+      font-size: 3.5vw;
       margin-right: 2vw;
     }
   }
@@ -153,6 +152,7 @@ footer {
   padding: 10vw 0 16vw 0;
   text-align: center;
   font-size: $h1;
+  background: darken($color: white, $amount: 5);
   &__title {
     margin: 0 0 4vw 0;
     width: 67vw;

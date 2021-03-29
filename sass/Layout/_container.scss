@@ -27,6 +27,7 @@
   }
   p {
     @include ellipsis;
+    font-size: 4.4vw;
   }
   &__bottomgreen {
     width: 12vw;
