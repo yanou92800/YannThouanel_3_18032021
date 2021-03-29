@@ -238,7 +238,7 @@ h1 {
   align-items: center;
   background: #e6e6e6;
   box-shadow: inset 0vw 3vw 1vw -2vw #d1d1d1;
-  width: 100%;
+  width: 100vw;
   font-size: 4.3vw;
   height: 13vw;
 }
@@ -423,8 +423,9 @@ h3 {
 p {
   margin-top: 0.5vw;
   margin-bottom: 0;
-  font-size: 4vw;
+  font-size: 4.9vw;
   font-weight: 300;
+  width: 84vw;
 }
 
 .fonctionnement {
@@ -485,12 +486,14 @@ p {
 }
 .restaurant__heart--no {
   z-index: 1;
+  transform: scale(1);
 }
 .restaurant__heart--no:hover {
   opacity: 0;
 }
 .restaurant__heart--no:hover + .restaurant__heart--yes {
   opacity: 1;
+  transform: scale(1.2);
 }
 .restaurant__heart--yes {
   opacity: 0;
@@ -535,8 +538,12 @@ footer .nav__logo {
   font-size: 4.6vw;
 }
 .banner__title {
-  margin: 0;
+  margin: 0 0 4vw 0;
   width: 67vw;
+}
+.banner p {
+  width: 84vw;
+  font-size: 4.9vw;
 }
 
 /*# sourceMappingURL=style.css.map */

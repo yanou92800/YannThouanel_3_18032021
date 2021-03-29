@@ -50,7 +50,6 @@ body {
 img {
   width: 100%;
 }
-
 h2 {
   font-size: $h2;
   width: 90vw;
@@ -64,8 +63,9 @@ h3 {
 p {
   margin-top: 0.5vw;
   margin-bottom: 0;
-  font-size: $p;
+  font-size: 4.9vw;
   font-weight: 300;
+  width: 84vw;
 }
 .fonctionnement {
   @include centercolumnbyflex;
@@ -106,11 +106,13 @@ p {
     bottom: 8vw;
     &--no {
       z-index: 1;
+      transform: scale(1);
       &:hover {
         opacity: 0;
       }
       &:hover + .restaurant__heart--yes {
         opacity: 1;
+        transform: scale(1.2);
       }
     }
     &--yes {
@@ -152,7 +154,11 @@ footer {
   text-align: center;
   font-size: $h1;
   &__title {
-    margin: 0;
+    margin: 0 0 4vw 0;
     width: 67vw;
+  }
+  p {
+    width: 84vw;
+    font-size: 4.9vw;
   }
 }
