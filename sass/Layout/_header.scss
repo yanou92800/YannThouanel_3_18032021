@@ -1,33 +1,16 @@
-header {
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 17vw;
-  @include tablet {
-    height: 12.75vw;
-  }
-  @include desktop {
-    height: 8.5vw;
-  }
-
-  .logo {
+  &__title {
     font-family: "Shrikhand";
-    @include tablet {
-    }
-    @include desktop {
-    }
   }
-  .arrow__logo {
-    font-size: $h3;
+  &__arrow {
+    font-size: 4.7vw;
     position: absolute;
     left: 6vw;
     top: 6vw;
     color: lighten($color: black, $amount: 20);
-    @include tablet {
-      font-size: $h3-tablet;
-    }
-    @include desktop {
-      font-size: $h3-desktop;
-    }
   }
 }

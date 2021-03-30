@@ -1,56 +1,46 @@
+body {
+  @include columnbyflex;
+}
+
+.container {
+  overflow: hidden;
+  margin-top: -5vw;
+  z-index: 1;
+  animation: container 0ms $container-delay both;
+  margin-bottom: 5vw;
+}
+
+.banner {
+  @include columnbyflex;
+  padding: 10vw 0 16vw 0;
+  text-align: center;
+  background: darken($color: white, $amount: 5);
+}
+
+.fonctionnement {
+  @include columnbyflex;
+  align-items: flex-end;
+  padding: 10vw 5vw 12vw 5vw;
+}
+
+.restaurant {
+  background: darken($color: white, $amount: 5);
+  padding: 10vw 5vw 12vw 5vw;
+}
+
 .menu {
-  @include centercolumnbyflex;
+  @include columnbyflex;
   background: darken($color: white, $amount: 5);
   border-radius: 12vw 12vw 0 0;
   margin-top: -13vw;
   position: relative;
-  &__container {
-    width: 95vw;
-  }
-  &__title {
-    display: flex;
-    font-family: "Shrikhand";
-    margin-left: 4.5vw;
-    padding-top: 8vw;
-    font-size: 7.5vw;
-    width: 95vw;
-    font-weight: 500;
-    margin-bottom: 5vw;
-  }
-  h6 {
-    @include ellipsis;
-  }
-  h5 {
-    @include ellipsis;
-  }
-  &__bottomgreen {
-    width: 12vw;
-    border-bottom: 1vw solid $color-tertiary;
-    margin-bottom: 3vw;
-  }
-  &__text {
-    margin-left: 3vw;
-    flex: 1;
-    @include ellipsis;
-  }
-  &__heart {
-    @include heart;
-    right: 11vw;
-    top: 9vw;
-    &--no {
-      z-index: 1;
-      &:hover {
-        opacity: 0;
-      }
-      &:hover + .menu__heart--yes {
-        opacity: 1;
-      }
-    }
-    &--yes {
-      opacity: 0;
-      color: transparent;
-      background: linear-gradient(357deg, $color-primary, $color-secondary);
-      -webkit-background-clip: text;
-    }
-  }
+}
+
+footer {
+  @include columnbyflex;
+  align-items: flex-start;
+  color: white;
+  background: lighten($color: black, $amount: 20);
+  height: 52vw;
+  width: 100%;
 }

@@ -1,0 +1,10 @@
+.nav {
+    margin-left: 5vw;
+    &__logo {
+      font-size: 4.3vw;
+      margin-right: 2vw;
+      &--2 {
+        font-size: 2.8vw;
+      }
+    }
+  }

@@ -1,16 +1,15 @@
 .home {
-  @include centercolumnbyflex;
+  @include columnbyflex;
   background: darken($color: white, $amount: 10);
   box-shadow: inset 0vw 3vw 1vw -2vw rgb(209, 209, 209);
   height: 13vw;
   &__location {
-    @include centercolumnbyflex;
-    flex-direction: row;
+    @include rowbyflex;
     color: lighten($color: black, $amount: 40);
     margin-right: 8vw;
   }
   &__logo {
-    margin: 0vw 5vw 1vw 0;
+    margin: 0 5vw 1vw 0;
     font-size: 4.3vw;
   }
 }
