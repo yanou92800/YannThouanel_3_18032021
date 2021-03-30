@@ -50,35 +50,51 @@ body {
 img {
   width: 100%;
 }
+h1 {
+  font-size: 8.5vw;
+  margin: 0;
+}
 h2 {
-  font-size: $h2;
-  width: 90vw;
+  font-size: 6.9vw;
+  margin: 0;
 }
 h3 {
-  margin-top: 1.5vw;
-  margin-bottom: 1vw;
-  font-size: $h3;
-
+  font-size: 4.7vw;
+  margin: 0;
+}
+h4 {
+  font-size: 4.2vw;
+  margin: 0;
+}
+h5 {
+  font-size: 5vw;
+  margin: 0;
+}
+h6 {
+  margin: 0;
+  font-size: 4.4vw;
+  font-weight: 300;
 }
 p {
-  margin-top: 0.5vw;
-  margin-bottom: 0;
-  font-size: 4.9vw;
-  font-weight: 300;
+  font-size: 3.5vw;
 }
 .fonctionnement {
   @include centercolumnbyflex;
-  margin: 10vw 0 12vw 0;
+  align-items: flex-end;
+  padding: 10vw 5vw 12vw 5vw;
+  &__title {
+    margin: 0 38vw 8vw 0;
+  }
   &__logo {
     color: lighten($color: black, $amount: 40);
-    font-size: $h3;
+    font-size: 5vw;
     margin-left: 2vw;
   }
 }
 
 .restaurant {
   background: darken($color: white, $amount: 5);
-  padding: 10vw 4.5vw;
+  padding: 10vw 5vw 12vw 5vw;
   &__card {
     height: 67vw;
     border-radius: 6vw;
@@ -86,6 +102,9 @@ p {
     background-color: white;
     box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
     position: relative;
+  }
+  &__title {
+    margin: 0 38vw 8vw 0;
   }
   .nouveau {
     @include btnnouveau;
@@ -98,7 +117,10 @@ p {
   &__text {
     display: flex;
     flex-direction: column;
-    margin-left: 3vw;
+    margin: 3vw 0 0 3vw;
+    h6 {
+      font-weight: 300;
+    }
   }
   &__heart {
     @include heart;
@@ -132,12 +154,13 @@ footer {
   .logo {
     font-family: "Shrikhand";
     margin: 5vw;
-    font-size: $h3;
   }
-  p {
-    margin: 0 0 2vw 0;
-    font-size: 4.5vw;
-    cursor: pointer;
+  h3 {
+    font-weight: 300;
+  }
+  h4 {
+    font-weight: 300;
+    margin-bottom: 2vw;
   }
   .nav {
     margin-left: 5vw;
@@ -151,14 +174,12 @@ footer {
   @include centercolumnbyflex;
   padding: 10vw 0 16vw 0;
   text-align: center;
-  font-size: $h1;
   background: darken($color: white, $amount: 5);
   &__title {
-    margin: 0 0 4vw 0;
     width: 67vw;
+    margin-bottom: 5vw;
   }
-  p {
-    width: 84vw;
-    font-size: 4.9vw;
+  h3 {
+  font-weight: 300;
   }
 }

@@ -66,28 +66,26 @@ a {
   cursor: pointer;
 }
 
-h1 {
-  margin: 0;
-}
-
 .banner__btn {
-  width: 56vw;
-  height: 13vw;
-  font-size: 4vw;
+  width: 58vw;
+  height: 14vw;
   color: white;
   background: linear-gradient(357deg, #9356DC, #FF79DA);
   border: none;
   box-shadow: 0vw 1vw 2vw 1vw #d1d1d1;
   border-radius: 25vw;
-  margin-top: 5vw;
+  margin-top: 7vw;
   cursor: pointer;
+}
+.banner__btn h4 {
+  font-weight: 300;
 }
 .banner__btn:hover {
   background: linear-gradient(357deg, #a16be0, #ff93e1);
 }
 
 .fonctionnement__btn {
-  width: 86vw;
+  width: 87.5vw;
   height: 20vw;
   box-shadow: 0vw 1vw 2vw 1vw #dddcdc;
   margin-bottom: 6vw;
@@ -100,15 +98,18 @@ h1 {
 }
 @media (min-width: 426px) {
   .fonctionnement__btn {
-    width: 68.8vw;
+    width: 65.625vw;
     height: 15vw;
   }
 }
 @media (min-width: 1024px) {
   .fonctionnement__btn {
-    width: 43vw;
+    width: 43.75vw;
     height: 10vw;
   }
+}
+.fonctionnement__btn h4 {
+  margin-left: 10vw;
 }
 .fonctionnement__btn:hover {
   background-color: #f2eafb;
@@ -136,24 +137,26 @@ h1 {
 }
 
 .command__btn {
-  width: 56vw;
-  height: 13vw;
-  font-size: 4vw;
+  width: 58vw;
+  height: 14vw;
   color: white;
   background: linear-gradient(357deg, #9356DC, #FF79DA);
   border: none;
   box-shadow: 0vw 1vw 2vw 1vw #d1d1d1;
   border-radius: 25vw;
-  margin-top: 5vw;
+  margin-top: 7vw;
   cursor: pointer;
   margin-bottom: 20vw;
+}
+.command__btn h4 {
+  font-weight: 300;
 }
 .command__btn:hover {
   background: linear-gradient(357deg, #a16be0, #ff93e1);
 }
 
 .menu__btn {
-  width: 86vw;
+  width: 87.5vw;
   height: 20vw;
   box-shadow: 0vw 1vw 2vw 1vw #dddcdc;
   margin-bottom: 6vw;
@@ -171,15 +174,18 @@ h1 {
 }
 @media (min-width: 426px) {
   .menu__btn {
-    width: 68.8vw;
+    width: 65.625vw;
     height: 15vw;
   }
 }
 @media (min-width: 1024px) {
   .menu__btn {
-    width: 43vw;
+    width: 43.75vw;
     height: 10vw;
   }
+}
+.menu__btn h4 {
+  margin-left: 10vw;
 }
 .menu__btn .menu__price {
   font-size: 4vw;
@@ -247,13 +253,10 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-}
-.home__location h2 {
-  font-size: 4.3vw;
-  width: 36vw;
+  color: #666666;
+  margin-right: 8vw;
 }
 .home__logo {
-  color: #666666;
   margin: 0vw 5vw 1vw 0;
   font-size: 4.3vw;
 }
@@ -276,17 +279,6 @@ header {
 }
 header .logo {
   font-family: "Shrikhand";
-  font-size: 8vw;
-}
-@media (min-width: 426px) {
-  header .logo {
-    font-size: 6vw;
-  }
-}
-@media (min-width: 1024px) {
-  header .logo {
-    font-size: 4vw;
-  }
 }
 header .arrow__logo {
   font-size: 5vw;
@@ -329,21 +321,15 @@ header .arrow__logo {
   font-weight: 500;
   margin-bottom: 5vw;
 }
-.menu h2 {
-  font-weight: 400;
-  margin-bottom: 1vw;
-  font-size: 4vw;
-}
-.menu h3 {
+.menu h6 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
 }
-.menu p {
+.menu h5 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  font-size: 4.4vw;
 }
 .menu__bottomgreen {
   width: 12vw;
@@ -418,22 +404,39 @@ img {
   width: 100%;
 }
 
+h1 {
+  font-size: 8.5vw;
+  margin: 0;
+}
+
 h2 {
-  font-size: 6vw;
-  width: 90vw;
+  font-size: 6.9vw;
+  margin: 0;
 }
 
 h3 {
-  margin-top: 1.5vw;
-  margin-bottom: 1vw;
+  font-size: 4.7vw;
+  margin: 0;
+}
+
+h4 {
+  font-size: 4.2vw;
+  margin: 0;
+}
+
+h5 {
   font-size: 5vw;
+  margin: 0;
+}
+
+h6 {
+  margin: 0;
+  font-size: 4.4vw;
+  font-weight: 300;
 }
 
 p {
-  margin-top: 0.5vw;
-  margin-bottom: 0;
-  font-size: 4.9vw;
-  font-weight: 300;
+  font-size: 3.5vw;
 }
 
 .fonctionnement {
@@ -441,7 +444,11 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 10vw 0 12vw 0;
+  align-items: flex-end;
+  padding: 10vw 5vw 12vw 5vw;
+}
+.fonctionnement__title {
+  margin: 0 38vw 8vw 0;
 }
 .fonctionnement__logo {
   color: #666666;
@@ -451,7 +458,7 @@ p {
 
 .restaurant {
   background: #f2f2f2;
-  padding: 10vw 4.5vw;
+  padding: 10vw 5vw 12vw 5vw;
 }
 .restaurant__card {
   height: 67vw;
@@ -460,6 +467,9 @@ p {
   background-color: white;
   box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
   position: relative;
+}
+.restaurant__title {
+  margin: 0 38vw 8vw 0;
 }
 .restaurant .nouveau {
   background-color: #99E2D0;
@@ -484,7 +494,10 @@ p {
 .restaurant__text {
   display: flex;
   flex-direction: column;
-  margin-left: 3vw;
+  margin: 3vw 0 0 3vw;
+}
+.restaurant__text h6 {
+  font-weight: 300;
 }
 .restaurant__heart {
   position: absolute;
@@ -521,12 +534,13 @@ footer {
 footer .logo {
   font-family: "Shrikhand";
   margin: 5vw;
-  font-size: 5vw;
 }
-footer p {
-  margin: 0 0 2vw 0;
-  font-size: 4.5vw;
-  cursor: pointer;
+footer h3 {
+  font-weight: 300;
+}
+footer h4 {
+  font-weight: 300;
+  margin-bottom: 2vw;
 }
 footer .nav {
   margin-left: 5vw;
@@ -543,16 +557,14 @@ footer .nav__logo {
   align-items: center;
   padding: 10vw 0 16vw 0;
   text-align: center;
-  font-size: 4.6vw;
   background: #f2f2f2;
 }
 .banner__title {
-  margin: 0 0 4vw 0;
   width: 67vw;
+  margin-bottom: 5vw;
 }
-.banner p {
-  width: 84vw;
-  font-size: 4.9vw;
+.banner h3 {
+  font-weight: 300;
 }
 
 /*# sourceMappingURL=style.css.map */

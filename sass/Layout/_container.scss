@@ -17,17 +17,11 @@
     font-weight: 500;
     margin-bottom: 5vw;
   }
-  h2 {
-    font-weight: 400;
-    margin-bottom: 1vw;
-    font-size: 4vw;
-  }
-  h3 {
+  h6 {
     @include ellipsis;
   }
-  p {
+  h5 {
     @include ellipsis;
-    font-size: 4.4vw;
   }
   &__bottomgreen {
     width: 12vw;

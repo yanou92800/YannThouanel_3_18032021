@@ -6,13 +6,10 @@
   &__location {
     @include centercolumnbyflex;
     flex-direction: row;
-    h2 {
-      font-size: 4.3vw;
-      width: 36vw;
-    }
+    color: lighten($color: black, $amount: 40);
+    margin-right: 8vw;
   }
   &__logo {
-    color: lighten($color: black, $amount: 40);
     margin: 0vw 5vw 1vw 0;
     font-size: 4.3vw;
   }

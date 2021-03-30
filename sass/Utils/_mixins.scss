@@ -15,6 +15,9 @@
     width: $width-btn-desktop;
     height: $height-btn-desktop;
   }
+  h4 {
+    margin-left: 10vw;
+  }
   box-shadow: 0vw 1vw 2vw 1vw #dddcdc;
   margin-bottom: 6vw;
   border-radius: 5.4vw;
@@ -40,15 +43,17 @@
   color: darken($color: $color-tertiary, $amount: 40);
 }
 @mixin btn {
-  width: 56vw;
-  height: 13vw;
-  font-size: 4vw;
+  width: 58vw;
+  height: 14vw;
   color: white;
   background: linear-gradient(357deg, $color-primary, $color-secondary);
   border: none;
   box-shadow: 0vw 1vw 2vw 1vw rgb(209, 209, 209);
   border-radius: 25vw;
-  margin-top: 5vw;
+  margin-top: 7vw;
+  h4 {
+    font-weight: 300;
+  }
   cursor: pointer;
   &:hover {
     background: linear-gradient(

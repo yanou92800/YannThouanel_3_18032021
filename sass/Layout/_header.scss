@@ -12,12 +12,9 @@ header {
 
   .logo {
     font-family: "Shrikhand";
-    font-size: $header-logo;
     @include tablet {
-      font-size: $header-logo-tablet;
     }
     @include desktop {
-      font-size: $header-logo-desktop;
     }
   }
   .arrow__logo {
