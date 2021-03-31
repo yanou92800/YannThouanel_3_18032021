@@ -38,55 +38,92 @@ img {
 h1 {
   font-size: $h1;
   margin: 0;
+  @include tablet {
+    font-size: $h1-tablet;
+  }
 }
 h2 {
   font-size: $h2;
   margin: 0;
+  @include tablet {
+    font-size: $h2-tablet;
+    text-align: center;
+  }
 }
 h3 {
   font-size: $h3;;
   margin: 0;
   font-weight: 300;
+  @include tablet {
+    font-size: $h3-tablet;
+  }
 }
 h4 {
   font-size: $h4;
   margin: 0;
+  @include tablet {
+    font-size: $h4-tablet;
+  }
 }
 h5 {
   font-size: $h5;
   margin: 0;
+  @include tablet {
+    font-size: $h5-tablet;
+  }
 }
 h6 {
   margin: 0;
   font-size: $h6;
   font-weight: 300;
+  @include tablet {
+    font-size: $h6-tablet;
+  }
 }
 p {
   font-size: $p;
   margin: 0;
+  @include tablet {
+    font-size: $p-tablet;
+  }
 }
 
 .banner {
   &__title {
     width: 67vw;
     margin-bottom: 5vw;
+    @include tablet {
+      margin-bottom: 3vw;
+    }
   }
 }
 
 .fonctionnement {
   &__title {
     margin: 0 38vw 8vw 0;
+    @include tablet {
+      margin: 1vw;
+      width: 100%;
+    }
   }
   &__logo {
     color: lighten($color: black, $amount: 40);
     font-size: 5vw;
     margin: 0 5vw 0 2vw;
+    @include tablet {
+      font-size: 3vw;
+    }
+
   }
 }
 
 .restaurant {
   &__title {
     margin: 0 38vw 8vw 0;
+    @include tablet {
+      margin: 3vw;
+      width: 100%;
+    }
   }
   &__card {
     height: 67vw;
@@ -95,10 +132,17 @@ p {
     background: white;
     box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
     position: relative;
+    @include tablet {
+      height: 35.5vw;
+      width: 43vw;
+    }
   }
   img {
     height: 47vw;
     border-radius: 6vw 6vw 0 0;
+    @include tablet {
+      height: 23.5vw;
+    }
   }
   &__text {
     display: flex;
@@ -107,7 +151,11 @@ p {
   }
   &__heart {
     @include heart;
-    bottom: 8vw;
+    @include tablet {
+      font-size: 3.5vw;
+      right: 4vw;
+      bottom: 4vw;
+    }
     &--no {
       z-index: 1;
       transform: scale(1);
@@ -142,9 +190,18 @@ p {
     width: 12vw;
     border-bottom: 1vw solid $color-tertiary;
     margin-bottom: 3vw;
+    @include tablet {
+      width: 6vw;
+      margin-bottom: 1.5vw;
+      border-bottom: 0.5vw solid $color-tertiary;
+    }
   }
   &__card {
     width: 95vw;
+    @include tablet {
+      width: 66%;
+      margin-bottom: 3vw;
+    }
   }
   &__text {
     margin-left: 3vw;
@@ -161,6 +218,11 @@ p {
     @include heart;
     right: 11vw;
     top: 9vw;
+    bottom: 0;
+    @include tablet {
+      font-size: 5vw;
+      top: 7vw;
+    }
     &--no {
       z-index: 1;
       &:hover {

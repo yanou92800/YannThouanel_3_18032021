@@ -15,12 +15,12 @@
 @mixin btn {
   width: 58vw;
   height: 14vw;
+  margin-top: 7vw;
   color: white;
   background: linear-gradient(357deg, $color-primary, $color-secondary);
   border: none;
   box-shadow: 0vw 1vw 2vw 1vw rgb(209, 209, 209);
   border-radius: 25vw;
-  margin-top: 7vw;
   cursor: pointer;
   &:hover {
     background: linear-gradient(
@@ -34,25 +34,17 @@
 @mixin btnfonctionnement {
   width: $width-btn;
   height: $height-btn;
-  box-shadow: 0vw 1vw 2vw 1vw #dddcdc;
   margin-bottom: 6vw;
+  box-shadow: 0vw 1vw 2vw 1vw #dddcdc;
   border-radius: 5.4vw;
   background: darken($color: white, $amount: 5);
   cursor: pointer;
-  @include tablet {
-    width: $width-btn-tablet;
-    height: $height-btn-tablet;
-  }
-  @include desktop {
-    width: $width-btn-desktop;
-    height: $height-btn-desktop;
-  }
 }
 
 @mixin btnnouveau {
-  background: $color-tertiary;
   width: 21.5vw;
   height: 7.5vw;
+  background: $color-tertiary;
   border-radius: 0.5vw;
   position: absolute;
   right: 4vw;
@@ -62,9 +54,10 @@
 }
 
 @mixin heart {
-  position: absolute;
   right: 8vw;
+  bottom: 8vw;
   font-size: 7vw;
+  position: absolute;
 }
 
 @mixin ellipsis {

@@ -69,23 +69,30 @@ a {
 .banner__btn {
   width: 58vw;
   height: 14vw;
+  margin-top: 7vw;
   color: white;
   background: linear-gradient(357deg, #9356DC, #FF79DA);
   border: none;
   box-shadow: 0vw 1vw 2vw 1vw #d1d1d1;
   border-radius: 25vw;
-  margin-top: 7vw;
   cursor: pointer;
 }
 .banner__btn:hover {
   background: linear-gradient(357deg, #a16be0, #ff93e1);
 }
+@media (min-width: 426px) {
+  .banner__btn {
+    margin-top: 3vw;
+    width: 29vw;
+    height: 7vw;
+  }
+}
 
 .fonctionnement__btn {
   width: 87.5vw;
   height: 20vw;
-  box-shadow: 0vw 1vw 2vw 1vw #dddcdc;
   margin-bottom: 6vw;
+  box-shadow: 0vw 1vw 2vw 1vw #dddcdc;
   border-radius: 5.4vw;
   background: #f2f2f2;
   cursor: pointer;
@@ -97,14 +104,11 @@ a {
 }
 @media (min-width: 426px) {
   .fonctionnement__btn {
-    width: 65.625vw;
-    height: 15vw;
-  }
-}
-@media (min-width: 1024px) {
-  .fonctionnement__btn {
-    width: 43.75vw;
-    height: 10vw;
+    width: 32vw;
+    height: 8vw;
+    margin: 2vw;
+    text-align: center;
+    padding-right: 3vw;
   }
 }
 .fonctionnement__btn:hover {
@@ -127,11 +131,20 @@ a {
   margin-left: -2.5vw;
   margin-right: 5vw;
 }
+@media (min-width: 426px) {
+  .fonctionnement__btn span {
+    width: 4vw;
+    height: 4vw;
+    margin-left: -1vw;
+    font-size: 1.5vw;
+    margin-right: 2vw;
+  }
+}
 
 .nouveau {
-  background: #99E2D0;
   width: 21.5vw;
   height: 7.5vw;
+  background: #99E2D0;
   border-radius: 0.5vw;
   position: absolute;
   right: 4vw;
@@ -143,28 +156,42 @@ a {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 426px) {
+  .nouveau {
+    width: 10vw;
+    height: 3.5vw;
+  }
+}
 
 .command__btn {
   width: 58vw;
   height: 14vw;
+  margin-top: 7vw;
   color: white;
   background: linear-gradient(357deg, #9356DC, #FF79DA);
   border: none;
   box-shadow: 0vw 1vw 2vw 1vw #d1d1d1;
   border-radius: 25vw;
-  margin-top: 7vw;
   cursor: pointer;
   margin-bottom: 20vw;
 }
 .command__btn:hover {
   background: linear-gradient(357deg, #a16be0, #ff93e1);
 }
+@media (min-width: 426px) {
+  .command__btn {
+    margin-top: 3vw;
+    width: 29vw;
+    height: 7vw;
+    margin-bottom: 5vw;
+  }
+}
 
 .menu__btn {
   width: 87.5vw;
   height: 20vw;
-  box-shadow: 0vw 1vw 2vw 1vw #dddcdc;
   margin-bottom: 6vw;
+  box-shadow: 0vw 1vw 2vw 1vw #dddcdc;
   border-radius: 5.4vw;
   background: #f2f2f2;
   cursor: pointer;
@@ -180,20 +207,17 @@ a {
 }
 @media (min-width: 426px) {
   .menu__btn {
-    width: 65.625vw;
-    height: 15vw;
-  }
-}
-@media (min-width: 1024px) {
-  .menu__btn {
-    width: 43.75vw;
-    height: 10vw;
+    height: 8vw;
+    margin: 2vw;
   }
 }
 .menu__btn .menu__price {
-  margin-right: 5vw;
-  margin-top: 8vw;
-  margin-left: 6vw;
+  margin: 8vw 5vw 0 6vw;
+}
+@media (min-width: 426px) {
+  .menu__btn .menu__price {
+    margin: 3.2vw 5.5vw 0 3vw;
+  }
 }
 .menu__btn:hover .valid {
   margin: 0;
@@ -215,14 +239,29 @@ a {
   border-radius: 0vw 5.4vw 5.4vw 0vw;
   margin-right: -15vw;
 }
+@media (min-width: 426px) {
+  .valid {
+    width: 7.5vw;
+    height: 10vw;
+    margin-right: -11vw;
+  }
+}
 .valid__logo {
-  color: #99E2D0;
-  background-color: white;
   padding: 2vw 0.5vw 0vw 1.5vw;
   width: 5vw;
   height: 5vw;
   font-size: 3.5vw;
+  color: #99E2D0;
+  background-color: white;
   border-radius: 20vw;
+}
+@media (min-width: 426px) {
+  .valid__logo {
+    padding: 1vw 0.25vw 0 0.75vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    font-size: 1.775vw;
+  }
 }
 
 .menu__btn--1 {
@@ -250,6 +289,11 @@ a {
   box-shadow: inset 0vw 3vw 1vw -2vw #d1d1d1;
   height: 13vw;
 }
+@media (min-width: 426px) {
+  .home {
+    height: 6.5vw;
+  }
+}
 .home__location {
   display: flex;
   flex-direction: row;
@@ -262,12 +306,22 @@ a {
   margin: 0 5vw 1vw 0;
   font-size: 4.3vw;
 }
+@media (min-width: 426px) {
+  .home__logo {
+    font-size: 2.15vw;
+  }
+}
 
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 17vw;
+}
+@media (min-width: 426px) {
+  .header {
+    height: 8.5vw;
+  }
 }
 .header__title {
   font-family: "Shrikhand";
@@ -279,6 +333,13 @@ a {
   top: 6vw;
   color: #333333;
 }
+@media (min-width: 426px) {
+  .header__arrow {
+    font-size: 2.35vw;
+    left: 3vw;
+    top: 3vw;
+  }
+}
 
 .nav {
   margin-left: 5vw;
@@ -287,8 +348,18 @@ a {
   font-size: 4.3vw;
   margin-right: 2vw;
 }
+@media (min-width: 426px) {
+  .nav__logo {
+    font-size: 2.15vw;
+  }
+}
 .nav__logo--2 {
   font-size: 2.8vw;
+}
+@media (min-width: 426px) {
+  .nav__logo--2 {
+    font-size: 1.4vw;
+  }
 }
 
 body {
@@ -299,6 +370,7 @@ body {
 }
 
 .container {
+  width: 100%;
   overflow: hidden;
   margin-top: -5vw;
   z-index: 1;
@@ -315,6 +387,11 @@ body {
   text-align: center;
   background: #f2f2f2;
 }
+@media (min-width: 426px) {
+  .banner {
+    padding: 3vw 0 3vw 0;
+  }
+}
 
 .fonctionnement {
   display: flex;
@@ -324,10 +401,26 @@ body {
   align-items: flex-end;
   padding: 10vw 5vw 12vw 5vw;
 }
+@media (min-width: 426px) {
+  .fonctionnement {
+    padding: 5vw 5vw 6vw 5vw;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
 
 .restaurant {
   background: #f2f2f2;
   padding: 10vw 5vw 12vw 5vw;
+}
+@media (min-width: 426px) {
+  .restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3vw 5vw 3vw 5vw;
+  }
 }
 
 .menu {
@@ -351,6 +444,11 @@ footer {
   background: #333333;
   height: 52vw;
   width: 100%;
+}
+@media (min-width: 426px) {
+  footer {
+    height: 32vw;
+  }
 }
 
 .progress {
@@ -378,10 +476,21 @@ h1 {
   font-size: 8.5vw;
   margin: 0;
 }
+@media (min-width: 426px) {
+  h1 {
+    font-size: 4.25vw;
+  }
+}
 
 h2 {
   font-size: 6.9vw;
   margin: 0;
+}
+@media (min-width: 426px) {
+  h2 {
+    font-size: 3.45vw;
+    text-align: center;
+  }
 }
 
 h3 {
@@ -389,15 +498,30 @@ h3 {
   margin: 0;
   font-weight: 300;
 }
+@media (min-width: 426px) {
+  h3 {
+    font-size: 2.35vw;
+  }
+}
 
 h4 {
   font-size: 4.2vw;
   margin: 0;
 }
+@media (min-width: 426px) {
+  h4 {
+    font-size: 2.1vw;
+  }
+}
 
 h5 {
   font-size: 5vw;
   margin: 0;
+}
+@media (min-width: 426px) {
+  h5 {
+    font-size: 2.5vw;
+  }
 }
 
 h6 {
@@ -405,28 +529,60 @@ h6 {
   font-size: 4.4vw;
   font-weight: 300;
 }
+@media (min-width: 426px) {
+  h6 {
+    font-size: 2.2vw;
+  }
+}
 
 p {
   font-size: 3.5vw;
   margin: 0;
+}
+@media (min-width: 426px) {
+  p {
+    font-size: 1.75vw;
+  }
 }
 
 .banner__title {
   width: 67vw;
   margin-bottom: 5vw;
 }
+@media (min-width: 426px) {
+  .banner__title {
+    margin-bottom: 3vw;
+  }
+}
 
 .fonctionnement__title {
   margin: 0 38vw 8vw 0;
+}
+@media (min-width: 426px) {
+  .fonctionnement__title {
+    margin: 1vw;
+    width: 100%;
+  }
 }
 .fonctionnement__logo {
   color: #666666;
   font-size: 5vw;
   margin: 0 5vw 0 2vw;
 }
+@media (min-width: 426px) {
+  .fonctionnement__logo {
+    font-size: 3vw;
+  }
+}
 
 .restaurant__title {
   margin: 0 38vw 8vw 0;
+}
+@media (min-width: 426px) {
+  .restaurant__title {
+    margin: 3vw;
+    width: 100%;
+  }
 }
 .restaurant__card {
   height: 67vw;
@@ -436,9 +592,20 @@ p {
   box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
   position: relative;
 }
+@media (min-width: 426px) {
+  .restaurant__card {
+    height: 35.5vw;
+    width: 43vw;
+  }
+}
 .restaurant img {
   height: 47vw;
   border-radius: 6vw 6vw 0 0;
+}
+@media (min-width: 426px) {
+  .restaurant img {
+    height: 23.5vw;
+  }
 }
 .restaurant__text {
   display: flex;
@@ -446,10 +613,17 @@ p {
   margin: 3vw 0 0 3vw;
 }
 .restaurant__heart {
-  position: absolute;
   right: 8vw;
-  font-size: 7vw;
   bottom: 8vw;
+  font-size: 7vw;
+  position: absolute;
+}
+@media (min-width: 426px) {
+  .restaurant__heart {
+    font-size: 3.5vw;
+    right: 4vw;
+    bottom: 4vw;
+  }
 }
 .restaurant__heart--no {
   z-index: 1;
@@ -483,8 +657,21 @@ p {
   border-bottom: 1vw solid #99E2D0;
   margin-bottom: 3vw;
 }
+@media (min-width: 426px) {
+  .menu__bottomgreen {
+    width: 6vw;
+    margin-bottom: 1.5vw;
+    border-bottom: 0.5vw solid #99E2D0;
+  }
+}
 .menu__card {
   width: 95vw;
+}
+@media (min-width: 426px) {
+  .menu__card {
+    width: 66%;
+    margin-bottom: 3vw;
+  }
 }
 .menu__text {
   margin-left: 3vw;
@@ -504,11 +691,19 @@ p {
   white-space: nowrap;
 }
 .menu__heart {
-  position: absolute;
   right: 8vw;
+  bottom: 8vw;
   font-size: 7vw;
+  position: absolute;
   right: 11vw;
   top: 9vw;
+  bottom: 0;
+}
+@media (min-width: 426px) {
+  .menu__heart {
+    font-size: 5vw;
+    top: 7vw;
+  }
 }
 .menu__heart--no {
   z-index: 1;

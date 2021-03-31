@@ -3,6 +3,7 @@ body {
 }
 
 .container {
+  width: 100%;
   overflow: hidden;
   margin-top: -5vw;
   z-index: 1;
@@ -15,17 +16,32 @@ body {
   padding: 10vw 0 16vw 0;
   text-align: center;
   background: darken($color: white, $amount: 5);
+  @include tablet {
+    padding: 3vw 0 3vw 0;
+  }
 }
 
 .fonctionnement {
   @include columnbyflex;
   align-items: flex-end;
   padding: 10vw 5vw 12vw 5vw;
+  @include tablet {
+    padding: 5vw 5vw 6vw 5vw;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 .restaurant {
   background: darken($color: white, $amount: 5);
   padding: 10vw 5vw 12vw 5vw;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3vw 5vw 3vw 5vw;
+  }
 }
 
 .menu {
@@ -43,4 +59,7 @@ footer {
   background: lighten($color: black, $amount: 20);
   height: 52vw;
   width: 100%;
+  @include tablet {
+    height: 32vw;
+  }
 }
