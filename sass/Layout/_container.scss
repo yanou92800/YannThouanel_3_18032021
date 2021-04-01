@@ -17,7 +17,10 @@ body {
   text-align: center;
   background: darken($color: white, $amount: 5);
   @include tablet {
-    padding: 3vw 0 3vw 0;
+    padding: 3vw 0;
+  }
+  @include desktop {
+    padding: 1.5vw 0;
   }
 }
 
@@ -26,10 +29,13 @@ body {
   align-items: flex-end;
   padding: 10vw 5vw 12vw 5vw;
   @include tablet {
-    padding: 5vw 5vw 6vw 5vw;
+    padding: 5vw;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+  }
+  @include desktop {
+    padding: 2.5vw;
   }
 }
 
@@ -40,7 +46,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 3vw 5vw 3vw 5vw;
+    padding: 3vw 5vw;
+  }
+  @include desktop {
+    padding: 1.5vw 2.5vw;
   }
 }
 
@@ -49,6 +58,17 @@ body {
   background: darken($color: white, $amount: 5);
   border-radius: 12vw 12vw 0 0;
   margin-top: -13vw;
+  width: 100vw;
+  @include tablet {
+    align-items: flex-start;
+    border-radius: 6vw 6vw 0 0;
+    margin-top: -6.5vw;
+  }
+  @include desktop {
+    border-radius: 3vw;
+    margin: -90vw auto 12vw auto;
+    width: 70vw;
+  }
   position: relative;
 }
 
@@ -61,5 +81,9 @@ footer {
   width: 100%;
   @include tablet {
     height: 32vw;
+  }
+  @include desktop {
+    height: 16vw;
+    align-items: center;
   }
 }

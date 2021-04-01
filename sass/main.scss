@@ -18,6 +18,14 @@
 .progress {
   border: 0.5vw solid black;
   padding: 1vw;
+  @include tablet {
+    padding: 0.5vw;
+    border: 0.25vw solid black;
+  }
+  @include desktop {
+    padding: 0.25vw;
+    border: 0.125vw solid black;
+  }
   position: fixed;
   top: 50%;
   animation: progress 0.5s forwards;
@@ -29,17 +37,24 @@
     background: $color-tertiary;
     width: 50vw;
     height: 2vw;
+    @include tablet {
+      width: 25vw;
+      height: 1vw;
+    }
+    @include desktop {
+      width: 12.5vw;
+      height: 0.5vw;
+    }
   }
-}
-
-img {
-  width: 100%;
 }
 h1 {
   font-size: $h1;
   margin: 0;
   @include tablet {
     font-size: $h1-tablet;
+  }
+  @include desktop {
+    font-size: $h1-desktop;
   }
 }
 h2 {
@@ -49,13 +64,19 @@ h2 {
     font-size: $h2-tablet;
     text-align: center;
   }
+  @include desktop {
+    font-size: $h2-desktop;
+  }
 }
 h3 {
-  font-size: $h3;;
+  font-size: $h3;
   margin: 0;
   font-weight: 300;
   @include tablet {
     font-size: $h3-tablet;
+  }
+  @include desktop {
+    font-size: $h3-desktop;
   }
 }
 h4 {
@@ -64,12 +85,18 @@ h4 {
   @include tablet {
     font-size: $h4-tablet;
   }
+  @include desktop {
+    font-size: $h4-desktop;
+  }
 }
 h5 {
   font-size: $h5;
   margin: 0;
   @include tablet {
     font-size: $h5-tablet;
+  }
+  @include desktop {
+    font-size: $h5-desktop;
   }
 }
 h6 {
@@ -79,12 +106,27 @@ h6 {
   @include tablet {
     font-size: $h6-tablet;
   }
+  @include desktop {
+    font-size: $h6-desktop;
+  }
 }
 p {
   font-size: $p;
   margin: 0;
   @include tablet {
     font-size: $p-tablet;
+  }
+  @include desktop {
+    font-size: $p-desktop;
+  }
+}
+.img-menu {
+  width: 100%;
+  @include tablet {
+    width: 100vw;
+  }
+  @include desktop {
+    height: 100vw;
   }
 }
 
@@ -94,6 +136,9 @@ p {
     margin-bottom: 5vw;
     @include tablet {
       margin-bottom: 3vw;
+    }
+    @include desktop {
+      margin-bottom: 1.5vw;
     }
   }
 }
@@ -105,6 +150,9 @@ p {
       margin: 1vw;
       width: 100%;
     }
+    @include desktop {
+      margin: 0.5vw;
+    }
   }
   &__logo {
     color: lighten($color: black, $amount: 40);
@@ -112,8 +160,12 @@ p {
     margin: 0 5vw 0 2vw;
     @include tablet {
       font-size: 3vw;
+      margin: 0 2.5vw 0 1vw;
     }
-
+    @include desktop {
+      font-size: 1.5vw;
+      margin: 0 1.25vw 0 0.5vw;
+    }
   }
 }
 
@@ -124,30 +176,55 @@ p {
       margin: 3vw;
       width: 100%;
     }
+    @include desktop {
+      margin: 1.5vw;
+    }
   }
   &__card {
     height: 67vw;
     border-radius: 6vw;
     margin-bottom: 6vw;
     background: white;
-    box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
+    box-shadow: 0 0.6vw 5vw 0.2vw #e0dede;
     position: relative;
     @include tablet {
       height: 35.5vw;
       width: 43vw;
+      box-shadow: 0 0.3vw 2.5vw 0.1vw #e0dede;
+      border-radius: 3vw;
+      margin-bottom: 3vw;
+    }
+    @include desktop {
+      height: 17.75vw;
+      width: 21.5vw;
+      box-shadow: 0 0.15vw 1.25vw 0.05vw #e0dede;
+      border-radius: 1.5vw;
+      margin-bottom: 1.5vw;
     }
   }
   img {
+    width: 100%;
     height: 47vw;
     border-radius: 6vw 6vw 0 0;
     @include tablet {
       height: 23.5vw;
+      border-radius: 3vw 3vw 0 0;
+    }
+    @include desktop {
+      height: 11.75vw;
+      border-radius: 1.5vw 1.5vw 0 0;
     }
   }
   &__text {
     display: flex;
     flex-direction: column;
     margin: 3vw 0 0 3vw;
+    @include tablet {
+      margin: 1.5vw 0 0 1.5vw;
+    }
+    @include desktop {
+      margin: 0.75vw 0 0 0.75vw;
+    }
   }
   &__heart {
     @include heart;
@@ -155,6 +232,11 @@ p {
       font-size: 3.5vw;
       right: 4vw;
       bottom: 4vw;
+    }
+    @include desktop {
+      font-size: 1.75vw;
+      right: 2vw;
+      bottom: 2vw;
     }
     &--no {
       z-index: 1;
@@ -185,6 +267,18 @@ p {
     width: 95vw;
     font-weight: 500;
     margin-bottom: 5vw;
+    @include tablet {
+      margin-left: 5vw;
+      padding-top: 4vw;
+      width: 47.5vw;
+      margin-bottom: 2.5vw;
+    }
+    @include desktop {
+      padding-top: 2vw;
+      width: 23.75vw;
+      margin-bottom: 1.25vw;
+      margin-left: 8vw;
+    }
   }
   &__bottomgreen {
     width: 12vw;
@@ -195,16 +289,33 @@ p {
       margin-bottom: 1.5vw;
       border-bottom: 0.5vw solid $color-tertiary;
     }
+    @include desktop {
+      width: 3vw;
+      margin-bottom: 0.75vw;
+      border-bottom: 0.25vw solid $color-tertiary;
+    }
   }
   &__card {
     width: 95vw;
     @include tablet {
-      width: 66%;
       margin-bottom: 3vw;
+      width: 66vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @include desktop {
+      margin-bottom: 1.5vw;
+      width: 50vw;
     }
   }
   &__text {
     margin-left: 3vw;
+    @include tablet {
+      margin-left: 1.5vw;
+    }
+    @include desktop {
+      margin-left: 0.75vw;
+    }
     flex: 1;
     @include ellipsis;
   }
@@ -220,8 +331,14 @@ p {
     top: 9vw;
     bottom: 0;
     @include tablet {
-      font-size: 5vw;
-      top: 7vw;
+      font-size: 3.5vw;
+      top: 4.5vw;
+      right: 14vw;
+    }
+    @include desktop {
+      font-size: 2.5vw;
+      top: 2.25vw;
+      right: 8vw;
     }
     &--no {
       z-index: 1;
@@ -245,9 +362,26 @@ footer {
   .title {
     font-family: "Shrikhand";
     margin: 5vw;
+    @include tablet {
+      margin: 2.5vw;
+    }
+    @include desktop {
+      margin: 1.25vw;
+    }
+    h3 {
+      @include desktop {
+        font-size: 2vw;
+      }
+    }
   }
   h4 {
     font-weight: 300;
     margin-bottom: 2vw;
+    @include tablet {
+      margin-bottom: 1vw;
+    }
+    @include desktop {
+      margin-bottom: 0.5vw;
+    }
   }
 }

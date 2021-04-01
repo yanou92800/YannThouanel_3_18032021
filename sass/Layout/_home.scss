@@ -1,21 +1,37 @@
 .home {
   @include columnbyflex;
   background: darken($color: white, $amount: 10);
-  box-shadow: inset 0vw 3vw 1vw -2vw rgb(209, 209, 209);
+  box-shadow: inset 0 3vw 1vw -2vw rgb(209, 209, 209);
   height: 13vw;
   @include tablet {
     height: 6.5vw;
+    box-shadow: inset 0 1.5vw 0.5vw -1vw rgb(209, 209, 209);
+  }
+  @include desktop {
+    height: 3.25vw;
+    box-shadow: inset 0 0.75vw 0.25vw -0.5vw rgb(209, 209, 209);
   }
   &__location {
     @include rowbyflex;
     color: lighten($color: black, $amount: 40);
     margin-right: 8vw;
+    @include tablet {
+      margin-right: 4vw;
+    }
+    @include desktop {
+      margin-right: 2vw;
+    }
   }
   &__logo {
     margin: 0 5vw 1vw 0;
     font-size: 4.3vw;
     @include tablet {
+      margin: 0 2.5vw 0.5vw 0;
       font-size: 2.15vw;
+    }
+    @include desktop {
+      margin: 0 1.25vw 0.25vw 0;
+      font-size: 1.075vw;
     }
   }
 }

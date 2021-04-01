@@ -6,6 +6,9 @@
   @include tablet {
     height: 8.5vw;
   }
+  @include desktop {
+    height: 4.25vw;
+  }
   &__title {
     font-family: "Shrikhand";
   }
@@ -19,6 +22,11 @@
       font-size: 2.35vw;
       left: 3vw;
       top: 3vw;
+    }
+    @include desktop {
+      font-size: 1.175vw;
+      left: 1.5vw;
+      top: 1.5vw;
     }
   }
 }

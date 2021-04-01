@@ -85,6 +85,17 @@ a {
     margin-top: 3vw;
     width: 29vw;
     height: 7vw;
+    box-shadow: 0vw 0.5vw 1vw 0.5vw #d1d1d1;
+    border-radius: 12.5vw;
+  }
+}
+@media (min-width: 1024px) {
+  .banner__btn {
+    margin-top: 1.5vw;
+    width: 14.5vw;
+    height: 3.5vw;
+    box-shadow: 0vw 0.25vw 0.5vw 0.25vw #d1d1d1;
+    border-radius: 6.25vw;
   }
 }
 
@@ -109,6 +120,18 @@ a {
     margin: 2vw;
     text-align: center;
     padding-right: 3vw;
+    box-shadow: 0vw 0.5vw 1vw 0.5vw #dddcdc;
+    border-radius: 2.7vw;
+  }
+}
+@media (min-width: 1024px) {
+  .fonctionnement__btn {
+    width: 16vw;
+    height: 4vw;
+    margin: 1vw;
+    padding-right: 1.5vw;
+    box-shadow: 0vw 0.25vw 0.5vw 0.25vw #dddcdc;
+    border-radius: 1.35vw;
   }
 }
 .fonctionnement__btn:hover {
@@ -135,9 +158,18 @@ a {
   .fonctionnement__btn span {
     width: 4vw;
     height: 4vw;
-    margin-left: -1vw;
+    margin-left: -1.25vw;
     font-size: 1.5vw;
-    margin-right: 2vw;
+    margin-right: 2.5vw;
+  }
+}
+@media (min-width: 1024px) {
+  .fonctionnement__btn span {
+    width: 2vw;
+    height: 2vw;
+    margin-left: -0.625vw;
+    font-size: 0.75vw;
+    margin-right: 1.25vw;
   }
 }
 
@@ -160,6 +192,18 @@ a {
   .nouveau {
     width: 10vw;
     height: 3.5vw;
+    border-radius: 0.25vw;
+    right: 2vw;
+    top: 2vw;
+  }
+}
+@media (min-width: 1024px) {
+  .nouveau {
+    width: 5vw;
+    height: 1.75vw;
+    border-radius: 0.125vw;
+    right: 1vw;
+    top: 1vw;
   }
 }
 
@@ -180,10 +224,22 @@ a {
 }
 @media (min-width: 426px) {
   .command__btn {
-    margin-top: 3vw;
+    margin: 3vw auto 5vw auto;
     width: 29vw;
     height: 7vw;
     margin-bottom: 5vw;
+    box-shadow: 0vw 0.5vw 1vw 0.5vw #d1d1d1;
+    border-radius: 12.5vw;
+  }
+}
+@media (min-width: 1024px) {
+  .command__btn {
+    margin-top: 1.5vw;
+    width: 14.5vw;
+    height: 3.5vw;
+    margin-bottom: 2.5vw;
+    box-shadow: 0vw 0.25vw 0.5vw 0.25vw #d1d1d1;
+    border-radius: 6.25vw;
   }
 }
 
@@ -195,6 +251,7 @@ a {
   border-radius: 5.4vw;
   background: #f2f2f2;
   cursor: pointer;
+  box-shadow: 0 1vw 2vw 1vw #e0dede;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -208,7 +265,17 @@ a {
 @media (min-width: 426px) {
   .menu__btn {
     height: 8vw;
-    margin: 2vw;
+    margin-bottom: 2vw;
+    box-shadow: 0 0.5vw 1vw 0.5vw #e0dede;
+    border-radius: 2.7vw;
+  }
+}
+@media (min-width: 1024px) {
+  .menu__btn {
+    height: 4vw;
+    margin-bottom: 1vw;
+    box-shadow: 0 0.25vw 0.5vw 0.25vw #e0dede;
+    border-radius: 1.35vw;
   }
 }
 .menu__btn .menu__price {
@@ -217,6 +284,11 @@ a {
 @media (min-width: 426px) {
   .menu__btn .menu__price {
     margin: 3.2vw 5.5vw 0 3vw;
+  }
+}
+@media (min-width: 1024px) {
+  .menu__btn .menu__price {
+    margin: 1.6vw 2.75vw 0 1.5vw;
   }
 }
 .menu__btn:hover .valid {
@@ -236,7 +308,7 @@ a {
   background: #99e2d0;
   width: 15vw;
   height: 20vw;
-  border-radius: 0vw 5.4vw 5.4vw 0vw;
+  border-radius: 0 5.4vw 5.4vw 0;
   margin-right: -15vw;
 }
 @media (min-width: 426px) {
@@ -244,6 +316,15 @@ a {
     width: 7.5vw;
     height: 10vw;
     margin-right: -11vw;
+    border-radius: 0 2.7vw 2.7vw 0;
+  }
+}
+@media (min-width: 1024px) {
+  .valid {
+    width: 3.75vw;
+    height: 5vw;
+    margin-right: -5.5vw;
+    border-radius: 0 1.35vw 1.35vw 0;
   }
 }
 .valid__logo {
@@ -252,8 +333,8 @@ a {
   height: 5vw;
   font-size: 3.5vw;
   color: #99E2D0;
-  background-color: white;
-  border-radius: 20vw;
+  background: white;
+  border-radius: 100%;
 }
 @media (min-width: 426px) {
   .valid__logo {
@@ -261,6 +342,14 @@ a {
     width: 2.5vw;
     height: 2.5vw;
     font-size: 1.775vw;
+  }
+}
+@media (min-width: 1024px) {
+  .valid__logo {
+    padding: 0.5vw 0.125vw 0 0.375vw;
+    width: 1.25vw;
+    height: 1.25vw;
+    font-size: 0.8875vw;
   }
 }
 
@@ -286,12 +375,19 @@ a {
   justify-content: center;
   align-items: center;
   background: #e6e6e6;
-  box-shadow: inset 0vw 3vw 1vw -2vw #d1d1d1;
+  box-shadow: inset 0 3vw 1vw -2vw #d1d1d1;
   height: 13vw;
 }
 @media (min-width: 426px) {
   .home {
     height: 6.5vw;
+    box-shadow: inset 0 1.5vw 0.5vw -1vw #d1d1d1;
+  }
+}
+@media (min-width: 1024px) {
+  .home {
+    height: 3.25vw;
+    box-shadow: inset 0 0.75vw 0.25vw -0.5vw #d1d1d1;
   }
 }
 .home__location {
@@ -302,13 +398,30 @@ a {
   color: #666666;
   margin-right: 8vw;
 }
+@media (min-width: 426px) {
+  .home__location {
+    margin-right: 4vw;
+  }
+}
+@media (min-width: 1024px) {
+  .home__location {
+    margin-right: 2vw;
+  }
+}
 .home__logo {
   margin: 0 5vw 1vw 0;
   font-size: 4.3vw;
 }
 @media (min-width: 426px) {
   .home__logo {
+    margin: 0 2.5vw 0.5vw 0;
     font-size: 2.15vw;
+  }
+}
+@media (min-width: 1024px) {
+  .home__logo {
+    margin: 0 1.25vw 0.25vw 0;
+    font-size: 1.075vw;
   }
 }
 
@@ -321,6 +434,11 @@ a {
 @media (min-width: 426px) {
   .header {
     height: 8.5vw;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    height: 4.25vw;
   }
 }
 .header__title {
@@ -340,9 +458,26 @@ a {
     top: 3vw;
   }
 }
+@media (min-width: 1024px) {
+  .header__arrow {
+    font-size: 1.175vw;
+    left: 1.5vw;
+    top: 1.5vw;
+  }
+}
 
 .nav {
   margin-left: 5vw;
+}
+@media (min-width: 426px) {
+  .nav {
+    margin-left: 2.5vw;
+  }
+}
+@media (min-width: 1024px) {
+  .nav {
+    margin-left: 1.25vw;
+  }
 }
 .nav__logo {
   font-size: 4.3vw;
@@ -351,6 +486,13 @@ a {
 @media (min-width: 426px) {
   .nav__logo {
     font-size: 2.15vw;
+    margin-right: 1vw;
+  }
+}
+@media (min-width: 1024px) {
+  .nav__logo {
+    font-size: 1.075vw;
+    margin-right: 0.5vw;
   }
 }
 .nav__logo--2 {
@@ -359,6 +501,11 @@ a {
 @media (min-width: 426px) {
   .nav__logo--2 {
     font-size: 1.4vw;
+  }
+}
+@media (min-width: 1024px) {
+  .nav__logo--2 {
+    font-size: 0.7vw;
   }
 }
 
@@ -389,7 +536,12 @@ body {
 }
 @media (min-width: 426px) {
   .banner {
-    padding: 3vw 0 3vw 0;
+    padding: 3vw 0;
+  }
+}
+@media (min-width: 1024px) {
+  .banner {
+    padding: 1.5vw 0;
   }
 }
 
@@ -403,10 +555,15 @@ body {
 }
 @media (min-width: 426px) {
   .fonctionnement {
-    padding: 5vw 5vw 6vw 5vw;
+    padding: 5vw;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  .fonctionnement {
+    padding: 2.5vw;
   }
 }
 
@@ -419,7 +576,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 3vw 5vw 3vw 5vw;
+    padding: 3vw 5vw;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant {
+    padding: 1.5vw 2.5vw;
   }
 }
 
@@ -431,7 +593,22 @@ body {
   background: #f2f2f2;
   border-radius: 12vw 12vw 0 0;
   margin-top: -13vw;
+  width: 100vw;
   position: relative;
+}
+@media (min-width: 426px) {
+  .menu {
+    align-items: flex-start;
+    border-radius: 6vw 6vw 0 0;
+    margin-top: -6.5vw;
+  }
+}
+@media (min-width: 1024px) {
+  .menu {
+    border-radius: 3vw;
+    margin: -90vw auto 12vw auto;
+    width: 70vw;
+  }
 }
 
 footer {
@@ -450,6 +627,12 @@ footer {
     height: 32vw;
   }
 }
+@media (min-width: 1024px) {
+  footer {
+    height: 16vw;
+    align-items: center;
+  }
+}
 
 .progress {
   border: 0.5vw solid black;
@@ -459,6 +642,18 @@ footer {
   animation: progress 0.5s forwards;
   animation-delay: 2.5s;
 }
+@media (min-width: 426px) {
+  .progress {
+    padding: 0.5vw;
+    border: 0.25vw solid black;
+  }
+}
+@media (min-width: 1024px) {
+  .progress {
+    padding: 0.25vw;
+    border: 0.125vw solid black;
+  }
+}
 .progress__bar {
   transform-origin: left;
   transform: scaleX(0.5);
@@ -467,9 +662,17 @@ footer {
   width: 50vw;
   height: 2vw;
 }
-
-img {
-  width: 100%;
+@media (min-width: 426px) {
+  .progress__bar {
+    width: 25vw;
+    height: 1vw;
+  }
+}
+@media (min-width: 1024px) {
+  .progress__bar {
+    width: 12.5vw;
+    height: 0.5vw;
+  }
 }
 
 h1 {
@@ -479,6 +682,11 @@ h1 {
 @media (min-width: 426px) {
   h1 {
     font-size: 4.25vw;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 2.125vw;
   }
 }
 
@@ -492,6 +700,11 @@ h2 {
     text-align: center;
   }
 }
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 1.725vw;
+  }
+}
 
 h3 {
   font-size: 4.7vw;
@@ -501,6 +714,11 @@ h3 {
 @media (min-width: 426px) {
   h3 {
     font-size: 2.35vw;
+  }
+}
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 1.175vw;
   }
 }
 
@@ -513,6 +731,11 @@ h4 {
     font-size: 2.1vw;
   }
 }
+@media (min-width: 1024px) {
+  h4 {
+    font-size: 1.05vw;
+  }
+}
 
 h5 {
   font-size: 5vw;
@@ -521,6 +744,11 @@ h5 {
 @media (min-width: 426px) {
   h5 {
     font-size: 2.5vw;
+  }
+}
+@media (min-width: 1024px) {
+  h5 {
+    font-size: 1.25vw;
   }
 }
 
@@ -534,6 +762,11 @@ h6 {
     font-size: 2.2vw;
   }
 }
+@media (min-width: 1024px) {
+  h6 {
+    font-size: 1.1vw;
+  }
+}
 
 p {
   font-size: 3.5vw;
@@ -542,6 +775,25 @@ p {
 @media (min-width: 426px) {
   p {
     font-size: 1.75vw;
+  }
+}
+@media (min-width: 1024px) {
+  p {
+    font-size: 0.875vw;
+  }
+}
+
+.img-menu {
+  width: 100%;
+}
+@media (min-width: 426px) {
+  .img-menu {
+    width: 100vw;
+  }
+}
+@media (min-width: 1024px) {
+  .img-menu {
+    height: 100vw;
   }
 }
 
@@ -554,6 +806,11 @@ p {
     margin-bottom: 3vw;
   }
 }
+@media (min-width: 1024px) {
+  .banner__title {
+    margin-bottom: 1.5vw;
+  }
+}
 
 .fonctionnement__title {
   margin: 0 38vw 8vw 0;
@@ -564,6 +821,11 @@ p {
     width: 100%;
   }
 }
+@media (min-width: 1024px) {
+  .fonctionnement__title {
+    margin: 0.5vw;
+  }
+}
 .fonctionnement__logo {
   color: #666666;
   font-size: 5vw;
@@ -572,6 +834,13 @@ p {
 @media (min-width: 426px) {
   .fonctionnement__logo {
     font-size: 3vw;
+    margin: 0 2.5vw 0 1vw;
+  }
+}
+@media (min-width: 1024px) {
+  .fonctionnement__logo {
+    font-size: 1.5vw;
+    margin: 0 1.25vw 0 0.5vw;
   }
 }
 
@@ -584,33 +853,68 @@ p {
     width: 100%;
   }
 }
+@media (min-width: 1024px) {
+  .restaurant__title {
+    margin: 1.5vw;
+  }
+}
 .restaurant__card {
   height: 67vw;
   border-radius: 6vw;
   margin-bottom: 6vw;
   background: white;
-  box-shadow: 0vw 0.6vw 5vw 0.2vw #e0dede;
+  box-shadow: 0 0.6vw 5vw 0.2vw #e0dede;
   position: relative;
 }
 @media (min-width: 426px) {
   .restaurant__card {
     height: 35.5vw;
     width: 43vw;
+    box-shadow: 0 0.3vw 2.5vw 0.1vw #e0dede;
+    border-radius: 3vw;
+    margin-bottom: 3vw;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant__card {
+    height: 17.75vw;
+    width: 21.5vw;
+    box-shadow: 0 0.15vw 1.25vw 0.05vw #e0dede;
+    border-radius: 1.5vw;
+    margin-bottom: 1.5vw;
   }
 }
 .restaurant img {
+  width: 100%;
   height: 47vw;
   border-radius: 6vw 6vw 0 0;
 }
 @media (min-width: 426px) {
   .restaurant img {
     height: 23.5vw;
+    border-radius: 3vw 3vw 0 0;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant img {
+    height: 11.75vw;
+    border-radius: 1.5vw 1.5vw 0 0;
   }
 }
 .restaurant__text {
   display: flex;
   flex-direction: column;
   margin: 3vw 0 0 3vw;
+}
+@media (min-width: 426px) {
+  .restaurant__text {
+    margin: 1.5vw 0 0 1.5vw;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant__text {
+    margin: 0.75vw 0 0 0.75vw;
+  }
 }
 .restaurant__heart {
   right: 8vw;
@@ -623,6 +927,13 @@ p {
     font-size: 3.5vw;
     right: 4vw;
     bottom: 4vw;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant__heart {
+    font-size: 1.75vw;
+    right: 2vw;
+    bottom: 2vw;
   }
 }
 .restaurant__heart--no {
@@ -652,6 +963,22 @@ p {
   font-weight: 500;
   margin-bottom: 5vw;
 }
+@media (min-width: 426px) {
+  .menu__title {
+    margin-left: 5vw;
+    padding-top: 4vw;
+    width: 47.5vw;
+    margin-bottom: 2.5vw;
+  }
+}
+@media (min-width: 1024px) {
+  .menu__title {
+    padding-top: 2vw;
+    width: 23.75vw;
+    margin-bottom: 1.25vw;
+    margin-left: 8vw;
+  }
+}
 .menu__bottomgreen {
   width: 12vw;
   border-bottom: 1vw solid #99E2D0;
@@ -664,13 +991,28 @@ p {
     border-bottom: 0.5vw solid #99E2D0;
   }
 }
+@media (min-width: 1024px) {
+  .menu__bottomgreen {
+    width: 3vw;
+    margin-bottom: 0.75vw;
+    border-bottom: 0.25vw solid #99E2D0;
+  }
+}
 .menu__card {
   width: 95vw;
 }
 @media (min-width: 426px) {
   .menu__card {
-    width: 66%;
     margin-bottom: 3vw;
+    width: 66vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .menu__card {
+    margin-bottom: 1.5vw;
+    width: 50vw;
   }
 }
 .menu__text {
@@ -679,6 +1021,16 @@ p {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+@media (min-width: 426px) {
+  .menu__text {
+    margin-left: 1.5vw;
+  }
+}
+@media (min-width: 1024px) {
+  .menu__text {
+    margin-left: 0.75vw;
+  }
 }
 .menu h5 {
   text-overflow: ellipsis;
@@ -701,8 +1053,16 @@ p {
 }
 @media (min-width: 426px) {
   .menu__heart {
-    font-size: 5vw;
-    top: 7vw;
+    font-size: 3.5vw;
+    top: 4.5vw;
+    right: 14vw;
+  }
+}
+@media (min-width: 1024px) {
+  .menu__heart {
+    font-size: 2.5vw;
+    top: 2.25vw;
+    right: 8vw;
   }
 }
 .menu__heart--no {
@@ -725,9 +1085,34 @@ footer .title {
   font-family: "Shrikhand";
   margin: 5vw;
 }
+@media (min-width: 426px) {
+  footer .title {
+    margin: 2.5vw;
+  }
+}
+@media (min-width: 1024px) {
+  footer .title {
+    margin: 1.25vw;
+  }
+}
+@media (min-width: 1024px) {
+  footer .title h3 {
+    font-size: 2vw;
+  }
+}
 footer h4 {
   font-weight: 300;
   margin-bottom: 2vw;
+}
+@media (min-width: 426px) {
+  footer h4 {
+    margin-bottom: 1vw;
+  }
+}
+@media (min-width: 1024px) {
+  footer h4 {
+    margin-bottom: 0.5vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
