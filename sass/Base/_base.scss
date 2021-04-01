@@ -1,3 +1,4 @@
+/*annuler config par défaut*/
 body {
   margin: 0;
   padding: 0;
@@ -17,4 +18,78 @@ footer a {
 }
 a {
   cursor: pointer;
+}
+/*config de mes titres*/
+h1 {
+  font-size: $h1;
+  margin: 0;
+  @include tablet {
+    font-size: $h1-tablet;
+  }
+  @include desktop {
+    font-size: $h1-desktop;
+  }
+}
+h2 {
+  font-size: $h2;
+  margin: 0;
+  @include tablet {
+    font-size: $h2-tablet;
+    text-align: center;
+  }
+  @include desktop {
+    font-size: $h2-desktop;
+  }
+}
+h3 {
+  font-size: $h3;
+  margin: 0;
+  font-weight: 300;
+  @include tablet {
+    font-size: $h3-tablet;
+  }
+  @include desktop {
+    font-size: $h3-desktop;
+  }
+}
+h4 {
+  font-size: $h4;
+  margin: 0;
+  @include tablet {
+    font-size: $h4-tablet;
+  }
+  @include desktop {
+    font-size: $h4-desktop;
+  }
+}
+h5 {
+  font-size: $h5;
+  margin: 0;
+  @include tablet {
+    font-size: $h5-tablet;
+  }
+  @include desktop {
+    font-size: $h5-desktop;
+  }
+}
+h6 {
+  margin: 0;
+  font-size: $h6;
+  font-weight: 300;
+  @include tablet {
+    font-size: $h6-tablet;
+  }
+  @include desktop {
+    font-size: $h6-desktop;
+  }
+}
+p {
+  font-size: $p;
+  margin: 0;
+  @include tablet {
+    font-size: $p-tablet;
+  }
+  @include desktop {
+    font-size: $p-desktop;
+  }
 }

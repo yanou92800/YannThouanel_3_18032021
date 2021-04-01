@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes menu__btn {
   0%, 20% {
     opacity: 0%;
@@ -41,6 +42,7 @@
     transform: scale(0);
   }
 }
+/*annuler config par défaut*/
 body {
   margin: 0;
   padding: 0;
@@ -64,6 +66,115 @@ footer a {
 
 a {
   cursor: pointer;
+}
+
+/*config de mes titres*/
+h1 {
+  font-size: 8.5vw;
+  margin: 0;
+}
+@media (min-width: 426px) {
+  h1 {
+    font-size: 4.25vw;
+  }
+}
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 2.125vw;
+  }
+}
+
+h2 {
+  font-size: 6.9vw;
+  margin: 0;
+}
+@media (min-width: 426px) {
+  h2 {
+    font-size: 3.45vw;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 1.725vw;
+  }
+}
+
+h3 {
+  font-size: 4.7vw;
+  margin: 0;
+  font-weight: 300;
+}
+@media (min-width: 426px) {
+  h3 {
+    font-size: 2.35vw;
+  }
+}
+@media (min-width: 1024px) {
+  h3 {
+    font-size: 1.175vw;
+  }
+}
+
+h4 {
+  font-size: 4.2vw;
+  margin: 0;
+}
+@media (min-width: 426px) {
+  h4 {
+    font-size: 2.1vw;
+  }
+}
+@media (min-width: 1024px) {
+  h4 {
+    font-size: 1.05vw;
+  }
+}
+
+h5 {
+  font-size: 5vw;
+  margin: 0;
+}
+@media (min-width: 426px) {
+  h5 {
+    font-size: 2.5vw;
+  }
+}
+@media (min-width: 1024px) {
+  h5 {
+    font-size: 1.25vw;
+  }
+}
+
+h6 {
+  margin: 0;
+  font-size: 4.4vw;
+  font-weight: 300;
+}
+@media (min-width: 426px) {
+  h6 {
+    font-size: 2.2vw;
+  }
+}
+@media (min-width: 1024px) {
+  h6 {
+    font-size: 1.1vw;
+  }
+}
+
+p {
+  font-size: 3.5vw;
+  margin: 0;
+}
+@media (min-width: 426px) {
+  p {
+    font-size: 1.75vw;
+  }
+}
+@media (min-width: 1024px) {
+  p {
+    font-size: 0.875vw;
+  }
 }
 
 .banner__btn {
@@ -680,114 +791,6 @@ footer {
   .progress__bar {
     width: 12.5vw;
     height: 0.5vw;
-  }
-}
-
-h1 {
-  font-size: 8.5vw;
-  margin: 0;
-}
-@media (min-width: 426px) {
-  h1 {
-    font-size: 4.25vw;
-  }
-}
-@media (min-width: 1024px) {
-  h1 {
-    font-size: 2.125vw;
-  }
-}
-
-h2 {
-  font-size: 6.9vw;
-  margin: 0;
-}
-@media (min-width: 426px) {
-  h2 {
-    font-size: 3.45vw;
-    text-align: center;
-  }
-}
-@media (min-width: 1024px) {
-  h2 {
-    font-size: 1.725vw;
-  }
-}
-
-h3 {
-  font-size: 4.7vw;
-  margin: 0;
-  font-weight: 300;
-}
-@media (min-width: 426px) {
-  h3 {
-    font-size: 2.35vw;
-  }
-}
-@media (min-width: 1024px) {
-  h3 {
-    font-size: 1.175vw;
-  }
-}
-
-h4 {
-  font-size: 4.2vw;
-  margin: 0;
-}
-@media (min-width: 426px) {
-  h4 {
-    font-size: 2.1vw;
-  }
-}
-@media (min-width: 1024px) {
-  h4 {
-    font-size: 1.05vw;
-  }
-}
-
-h5 {
-  font-size: 5vw;
-  margin: 0;
-}
-@media (min-width: 426px) {
-  h5 {
-    font-size: 2.5vw;
-  }
-}
-@media (min-width: 1024px) {
-  h5 {
-    font-size: 1.25vw;
-  }
-}
-
-h6 {
-  margin: 0;
-  font-size: 4.4vw;
-  font-weight: 300;
-}
-@media (min-width: 426px) {
-  h6 {
-    font-size: 2.2vw;
-  }
-}
-@media (min-width: 1024px) {
-  h6 {
-    font-size: 1.1vw;
-  }
-}
-
-p {
-  font-size: 3.5vw;
-  margin: 0;
-}
-@media (min-width: 426px) {
-  p {
-    font-size: 1.75vw;
-  }
-}
-@media (min-width: 1024px) {
-  p {
-    font-size: 0.875vw;
   }
 }
 

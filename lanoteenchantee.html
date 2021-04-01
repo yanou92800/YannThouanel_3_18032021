@@ -16,7 +16,13 @@
       <h1 class="header__title">ohmyfood</h1>
     </header>
     <main>
-      <img src="Maquettes/images/restaurants/portable-menu/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="alafrancaise" class="img-menu"/>
+      <picture>
+        <source srcset="Maquettes/images/restaurants/desktop-menu/lanoteenchantee.jpg"
+        media="(min-width: 1024px)">
+        <source srcset="Maquettes/images/restaurants/tablet-menu/lanoteenchantee.jpg"
+        media="(min-width: 426px)">
+        <img src="Maquettes/images/restaurants/portable/lanoteenchantee.jpg" alt="alafrancaise" class="img-menu"/>
+      </picture>
       <section class="menu">
         <h2 class="menu__title">La note enchantée</h2>
         <i class="menu__heart menu__heart--no far fa-heart "></i>
