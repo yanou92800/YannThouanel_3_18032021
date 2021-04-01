@@ -67,6 +67,10 @@ a {
 }
 
 .banner__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 58vw;
   height: 14vw;
   margin-top: 7vw;
@@ -208,6 +212,10 @@ a {
 }
 
 .command__btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 58vw;
   height: 14vw;
   margin-top: 7vw;
