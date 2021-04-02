@@ -214,7 +214,7 @@ p {
   }
 }
 
-.fonctionnement__btn {
+.functioning__btn {
   width: 87.5vw;
   height: 20vw;
   margin-bottom: 6vw;
@@ -229,7 +229,7 @@ p {
   justify-content: flex-start;
 }
 @media (min-width: 426px) {
-  .fonctionnement__btn {
+  .functioning__btn {
     width: 32vw;
     height: 8vw;
     margin: 2vw;
@@ -240,7 +240,7 @@ p {
   }
 }
 @media (min-width: 1024px) {
-  .fonctionnement__btn {
+  .functioning__btn {
     width: 16vw;
     height: 4vw;
     margin: 1vw;
@@ -249,13 +249,13 @@ p {
     border-radius: 1.35vw;
   }
 }
-.fonctionnement__btn:hover {
+.functioning__btn:hover {
   background-color: #f2eafb;
 }
-.fonctionnement__btn:hover .fonctionnement__logo {
+.functioning__btn:hover .fonctionnement__logo {
   color: #9356DC;
 }
-.fonctionnement__btn span {
+.functioning__btn span {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -270,7 +270,7 @@ p {
   margin-right: 5vw;
 }
 @media (min-width: 426px) {
-  .fonctionnement__btn span {
+  .functioning__btn span {
     width: 4vw;
     height: 4vw;
     margin-left: -1.25vw;
@@ -279,7 +279,7 @@ p {
   }
 }
 @media (min-width: 1024px) {
-  .fonctionnement__btn span {
+  .functioning__btn span {
     width: 2vw;
     height: 2vw;
     margin-left: -0.625vw;

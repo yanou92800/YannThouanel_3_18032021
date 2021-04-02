@@ -16,7 +16,7 @@
   }
 }
 
-.fonctionnement__btn {
+.functioning__btn {
   @include btnfunctioning;
   @include tablet {
     width: $width-btn-tablet;
