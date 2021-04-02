@@ -39,7 +39,7 @@
   justify-content: flex-start;
   &:hover {
     background-color: lighten($color: $color-primary, $amount: 35);
-    .fonctionnement__logo {
+    .functioning__logo {
       color: $color-primary;
     }
   }

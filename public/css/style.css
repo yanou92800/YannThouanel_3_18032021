@@ -252,7 +252,7 @@ p {
 .functioning__btn:hover {
   background-color: #f2eafb;
 }
-.functioning__btn:hover .fonctionnement__logo {
+.functioning__btn:hover .functioning__logo {
   color: #9356DC;
 }
 .functioning__btn span {
