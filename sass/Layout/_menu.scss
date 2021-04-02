@@ -1,0 +1,124 @@
+.img-menu {
+    width: 100%;
+    @include tablet {
+      width: 100vw;
+    }
+    @include desktop {
+      height: 100vw;
+    }
+  }
+.menu {
+    @include columnbyflex;
+    background: darken($color: white, $amount: 5);
+    border-radius: 12vw 12vw 0 0;
+    margin-top: -13vw;
+    width: 100vw;
+    position: relative;
+    @include tablet {
+      align-items: flex-start;
+      border-radius: 6vw 6vw 0 0;
+      margin-top: -6.5vw;
+    }
+    @include desktop {
+      border-radius: 3vw;
+      margin: -90vw auto 12vw auto;
+      width: 70vw;
+    }
+    &__title {
+      display: flex;
+      font-family: "Shrikhand";
+      margin-left: 4.5vw;
+      padding-top: 8vw;
+      width: 95vw;
+      font-weight: 500;
+      margin-bottom: 5vw;
+      @include tablet {
+        margin-left: 5vw;
+        padding-top: 4vw;
+        width: 47.5vw;
+        margin-bottom: 2.5vw;
+      }
+      @include desktop {
+        padding-top: 2vw;
+        width: 23.75vw;
+        margin-bottom: 1.25vw;
+        margin-left: 8vw;
+      }
+    }
+    &__bottomgreen {
+      width: 12vw;
+      border-bottom: 1vw solid $color-tertiary;
+      margin-bottom: 3vw;
+      @include tablet {
+        width: 6vw;
+        margin-bottom: 1.5vw;
+        border-bottom: 0.5vw solid $color-tertiary;
+      }
+      @include desktop {
+        width: 3vw;
+        margin-bottom: 0.75vw;
+        border-bottom: 0.25vw solid $color-tertiary;
+      }
+    }
+    &__card {
+      width: 95vw;
+      @include tablet {
+        margin-bottom: 3vw;
+        width: 66vw;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      @include desktop {
+        margin-bottom: 1.5vw;
+        width: 50vw;
+      }
+    }
+    &__text {
+      margin-left: 3vw;
+      @include tablet {
+        margin-left: 1.5vw;
+      }
+      @include desktop {
+        margin-left: 0.75vw;
+      }
+      flex: 1;
+      @include ellipsis;
+    }
+    h5 {
+      @include ellipsis;
+    }
+    h6 {
+      @include ellipsis;
+    }
+    &__heart {
+      @include heart;
+      right: 11vw;
+      top: 9vw;
+      bottom: 0;
+      @include tablet {
+        font-size: 3.5vw;
+        top: 4.5vw;
+        right: 14vw;
+      }
+      @include desktop {
+        font-size: 2.5vw;
+        top: 2.25vw;
+        right: 8vw;
+      }
+      &--no {
+        z-index: 1;
+        &:hover {
+          opacity: 0;
+        }
+        &:hover + .menu__heart--yes {
+          opacity: 1;
+        }
+      }
+      &--yes {
+        opacity: 0;
+        color: transparent;
+        background: linear-gradient(357deg, $color-primary, $color-secondary);
+        -webkit-background-clip: text;
+      }
+    }
+  }

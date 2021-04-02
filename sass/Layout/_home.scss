@@ -35,3 +35,62 @@
     }
   }
 }
+.banner {
+  @include columnbyflex;
+  padding: 10vw 0 16vw 0;
+  text-align: center;
+  background: darken($color: white, $amount: 5);
+  @include tablet {
+    padding: 3vw 0;
+  }
+  @include desktop {
+    padding: 1.5vw 0;
+  }
+  &__title {
+    width: 67vw;
+    margin-bottom: 5vw;
+    @include tablet {
+      margin-bottom: 3vw;
+    }
+    @include desktop {
+      margin-bottom: 1.5vw;
+    }
+  }
+}
+.functioning {
+  @include columnbyflex;
+  align-items: flex-end;
+  padding: 10vw 5vw 12vw 5vw;
+  @include tablet {
+    padding: 5vw;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  @include desktop {
+    padding: 2.5vw;
+  }
+  &__title {
+    margin: 0 38vw 8vw 0;
+    @include tablet {
+      margin: 1vw;
+      width: 100%;
+    }
+    @include desktop {
+      margin: 0.5vw;
+    }
+  }
+  &__logo {
+    color: lighten($color: black, $amount: 40);
+    font-size: 5vw;
+    margin: 0 5vw 0 2vw;
+    @include tablet {
+      font-size: 3vw;
+      margin: 0 2.5vw 0 1vw;
+    }
+    @include desktop {
+      font-size: 1.5vw;
+      margin: 0 1.25vw 0 0.5vw;
+    }
+  }
+}

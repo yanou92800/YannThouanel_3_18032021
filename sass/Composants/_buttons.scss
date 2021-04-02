@@ -17,7 +17,7 @@
 }
 
 .fonctionnement__btn {
-  @include btnfonctionnement;
+  @include btnfunctioning;
   @include tablet {
     width: $width-btn-tablet;
     height: $height-btn-tablet;
@@ -111,7 +111,7 @@
 }
 
 .menu__btn {
-  @include btnfonctionnement;
+  @include btnfunctioning;
   box-shadow: 0 1vw 2vw 1vw #e0dede;
   @include tablet {
     height: $height-btn-tablet;

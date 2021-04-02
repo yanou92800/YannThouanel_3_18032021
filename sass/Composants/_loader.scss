@@ -1,0 +1,32 @@
+.progress {
+    border: 0.5vw solid black;
+    padding: 1vw;
+    @include tablet {
+      padding: 0.5vw;
+      border: 0.25vw solid black;
+    }
+    @include desktop {
+      padding: 0.25vw;
+      border: 0.125vw solid black;
+    }
+    position: fixed;
+    top: 50%;
+    animation: progress 0.5s forwards;
+    animation-delay: 2.5s;
+    &__bar {
+      transform-origin: left;
+      transform: scaleX(0.5);
+      animation: progress-bar $prog-bar-dur $prog-bar-delay both;
+      background: $color-tertiary;
+      width: 50vw;
+      height: 2vw;
+      @include tablet {
+        width: 25vw;
+        height: 1vw;
+      }
+      @include desktop {
+        width: 12.5vw;
+        height: 0.5vw;
+      }
+    }
+  }
