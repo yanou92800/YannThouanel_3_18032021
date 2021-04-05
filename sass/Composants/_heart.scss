@@ -1,0 +1,97 @@
+.restaurant {
+    .like {
+      width: 7vw;
+      height: 7vw;
+      position: relative;
+      bottom: 10vw;
+      left: 72vw;
+      @include tablet {
+        width: 3.5vw;
+        height: 3.5vw;
+        bottom: 5vw;
+        left: 36vw;
+      }
+      @include desktop {
+        width: 1.75vw;
+        height: 1.75vw;
+        bottom: 2.5vw;
+        left: 18vw;
+      }
+      &__heart {
+        position: absolute;
+        font-size: 7vw;
+        @include tablet {
+          font-size: 3.5vw;
+        }
+        @include desktop {
+          font-size: 1.75vw;
+        }
+        &--no {
+          z-index: 1;
+          transition: all 1s;
+          &:hover {
+            opacity: 0;
+          }
+          &:hover + .like__heart--yes {
+            opacity: 1;
+          }
+        }
+        &--yes {
+          opacity: 0;
+          color: transparent;
+          background: linear-gradient(357deg, $color-primary, $color-secondary);
+          -webkit-background-clip: text;
+          transition: all 1s;
+        }
+      }
+    }
+  }
+.menu {
+  .like {
+    width: 7vw;
+    height: 7vw;
+    position: relative;
+    bottom: 14vw;
+    left: 40vw;
+    cursor: pointer;
+    @include tablet {
+      width: 3.5vw;
+      height: 3.5vw;
+      bottom: 7vw;
+      left: 82vw;
+    }
+    @include desktop {
+      width: 1.75vw;
+      height: 1.75vw;
+      bottom: 3.5vw;
+      left: 43vw;
+    }
+    &__heart {
+      position: absolute;
+      font-size: 7vw;
+      @include tablet {
+        font-size: 3.5vw;
+      }
+      @include desktop {
+        font-size: 1.75vw;
+      }
+      &--no {
+        z-index: 1;
+        transition: all 1s;
+        &:hover {
+          opacity: 0;
+        }
+        &:hover + .like__heart--yes {
+          opacity: 1;
+        }
+      }
+      &--yes {
+        opacity: 0;
+        color: transparent;
+        background: linear-gradient(357deg, $color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        transition: all 1s;
+      }
+    }
+  }
+}

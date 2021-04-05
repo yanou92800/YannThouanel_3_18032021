@@ -37,7 +37,7 @@
     font-weight: 500;
     margin-bottom: 5vw;
     @include tablet {
-      margin-left: 5vw;
+      margin-left: 14vw;
       padding-top: 4vw;
       width: 47.5vw;
       margin-bottom: 2.5vw;
@@ -93,36 +93,5 @@
   }
   h6 {
     @include ellipsis;
-  }
-  &__heart {
-    @include heart;
-    right: 11vw;
-    top: 9vw;
-    bottom: 0;
-    @include tablet {
-      font-size: 3.5vw;
-      top: 4.5vw;
-      right: 14vw;
-    }
-    @include desktop {
-      font-size: 2.5vw;
-      top: 2.25vw;
-      right: 5vw;
-    }
-    &--no {
-      z-index: 1;
-      &:hover {
-        opacity: 0;
-      }
-      &:hover + .menu__heart--yes {
-        opacity: 1;
-      }
-    }
-    &--yes {
-      opacity: 0;
-      color: transparent;
-      background: linear-gradient(357deg, $color-primary, $color-secondary);
-      -webkit-background-clip: text;
-    }
   }
 }

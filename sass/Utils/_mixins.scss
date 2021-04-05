@@ -54,13 +54,6 @@
   color: darken($color: $color-tertiary, $amount: 40);
 }
 
-@mixin heart {
-  right: 8vw;
-  bottom: 8vw;
-  font-size: 7vw;
-  position: absolute;
-}
-
 @mixin ellipsis {
   text-overflow: ellipsis;
   overflow: hidden;
