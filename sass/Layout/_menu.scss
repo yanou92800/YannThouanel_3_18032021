@@ -76,17 +76,6 @@
       margin-bottom: 1.5vw;
       width: 37vw;
     }
-    h4 {
-      font-size: $h3;
-      margin: 0;
-      font-weight: 300;
-      @include tablet {
-        font-size: $h3-tablet;
-      }
-      @include desktop {
-        font-size: $h3-desktop;
-      }
-    }
   }
   &__text {
     margin-left: 3vw;
@@ -99,10 +88,27 @@
     flex: 1;
     @include ellipsis;
   }
+  h4 {
+    @include ellipsis;
+    font-size: $h5;
+    margin: 0;
+    @include tablet {
+      font-size: $h5-tablet;
+    }
+    @include desktop {
+      font-size: $h5-desktop;
+    }
+  }
   h5 {
     @include ellipsis;
-  }
-  h6 {
-    @include ellipsis;
+    margin: 0;
+    font-size: $h6;
+    font-weight: 300;
+    @include tablet {
+      font-size: $h6-tablet;
+    }
+    @include desktop {
+      font-size: $h6-desktop;
+    }
   }
 }

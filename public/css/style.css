@@ -1079,21 +1079,6 @@ body {
     width: 37vw;
   }
 }
-.menu__card h4 {
-  font-size: 4.7vw;
-  margin: 0;
-  font-weight: 300;
-}
-@media (min-width: 426px) {
-  .menu__card h4 {
-    font-size: 2.35vw;
-  }
-}
-@media (min-width: 1024px) {
-  .menu__card h4 {
-    font-size: 1.175vw;
-  }
-}
 .menu__text {
   margin-left: 3vw;
   flex: 1;
@@ -1111,15 +1096,40 @@ body {
     margin-left: 0.75vw;
   }
 }
+.menu h4 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 5vw;
+  margin: 0;
+}
+@media (min-width: 426px) {
+  .menu h4 {
+    font-size: 2.5vw;
+  }
+}
+@media (min-width: 1024px) {
+  .menu h4 {
+    font-size: 1.25vw;
+  }
+}
 .menu h5 {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  margin: 0;
+  font-size: 4.4vw;
+  font-weight: 300;
 }
-.menu h6 {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
+@media (min-width: 426px) {
+  .menu h5 {
+    font-size: 2.2vw;
+  }
+}
+@media (min-width: 1024px) {
+  .menu h5 {
+    font-size: 1.1vw;
+  }
 }
 
 footer {
