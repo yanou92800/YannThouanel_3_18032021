@@ -21,6 +21,16 @@
     @include desktop {
       margin-right: 2vw;
     }
+    h2 {
+      font-size: $h4;
+      margin: 0;
+      @include tablet {
+        font-size: $h4-tablet;
+      }
+      @include desktop {
+        font-size: $h4-desktop;
+      }
+    }
   }
   &__logo {
     margin: 0 5vw 1vw 0;
@@ -78,6 +88,18 @@
     }
     @include desktop {
       margin: 0.5vw;
+    }
+    h3 {
+      font-size: $h2;
+      margin: 0;
+      font-weight: bold;
+      @include tablet {
+        font-size: $h2-tablet;
+        text-align: center;
+      }
+      @include desktop {
+        font-size: $h2-desktop;
+      }
     }
   }
   &__logo {

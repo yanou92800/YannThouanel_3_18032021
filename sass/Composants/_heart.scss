@@ -39,7 +39,7 @@
         &--yes {
           opacity: 0;
           color: transparent;
-          background: linear-gradient(357deg, $color-primary, $color-secondary);
+          background: linear-gradient($color-primary, $color-secondary);
           -webkit-background-clip: text;
           transition: all 1s;
         }
@@ -88,7 +88,7 @@
       &--yes {
         opacity: 0;
         color: transparent;
-        background: linear-gradient(357deg, $color-primary, $color-secondary);
+        background: linear-gradient($color-primary, $color-secondary);
         -webkit-background-clip: text;
         transition: all 1s;
       }

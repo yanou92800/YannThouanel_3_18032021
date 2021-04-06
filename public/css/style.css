@@ -186,7 +186,7 @@ p {
   height: 14vw;
   margin-top: 7vw;
   color: white;
-  background: linear-gradient(357deg, #9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
   border: none;
   box-shadow: 0vw 1vw 2vw 1vw #d1d1d1;
   border-radius: 25vw;
@@ -331,7 +331,7 @@ p {
   height: 14vw;
   margin-top: 7vw;
   color: white;
-  background: linear-gradient(357deg, #9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
   border: none;
   box-shadow: 0vw 1vw 2vw 1vw #d1d1d1;
   border-radius: 25vw;
@@ -579,7 +579,7 @@ p {
 .restaurant .like__heart--yes {
   opacity: 0;
   color: transparent;
-  background: linear-gradient(357deg, #9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   transition: all 1s;
 }
@@ -635,7 +635,7 @@ p {
 .menu .like__heart--yes {
   opacity: 0;
   color: transparent;
-  background: linear-gradient(357deg, #9356DC, #FF79DA);
+  background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   transition: all 1s;
 }
@@ -736,6 +736,20 @@ body {
     margin-right: 2vw;
   }
 }
+.home__location h2 {
+  font-size: 4.2vw;
+  margin: 0;
+}
+@media (min-width: 426px) {
+  .home__location h2 {
+    font-size: 2.1vw;
+  }
+}
+@media (min-width: 1024px) {
+  .home__location h2 {
+    font-size: 1.05vw;
+  }
+}
 .home__logo {
   margin: 0 5vw 1vw 0;
   font-size: 4.3vw;
@@ -822,6 +836,22 @@ body {
     margin: 0.5vw;
   }
 }
+.functioning__title h3 {
+  font-size: 6.9vw;
+  margin: 0;
+  font-weight: bold;
+}
+@media (min-width: 426px) {
+  .functioning__title h3 {
+    font-size: 3.45vw;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .functioning__title h3 {
+    font-size: 1.725vw;
+  }
+}
 .functioning__logo {
   color: #666666;
   font-size: 5vw;
@@ -869,6 +899,21 @@ body {
 @media (min-width: 1024px) {
   .restaurant__title {
     margin: 1.5vw;
+  }
+}
+.restaurant__title h4 {
+  font-size: 6.9vw;
+  margin: 0;
+}
+@media (min-width: 426px) {
+  .restaurant__title h4 {
+    font-size: 3.45vw;
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant__title h4 {
+    font-size: 1.725vw;
   }
 }
 .restaurant__card {
@@ -1032,6 +1077,21 @@ body {
   .menu__card {
     margin-bottom: 1.5vw;
     width: 37vw;
+  }
+}
+.menu__card h4 {
+  font-size: 4.7vw;
+  margin: 0;
+  font-weight: 300;
+}
+@media (min-width: 426px) {
+  .menu__card h4 {
+    font-size: 2.35vw;
+  }
+}
+@media (min-width: 1024px) {
+  .menu__card h4 {
+    font-size: 1.175vw;
   }
 }
 .menu__text {

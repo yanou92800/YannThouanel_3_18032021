@@ -19,6 +19,17 @@
     @include desktop {
       margin: 1.5vw;
     }
+    h4 {
+      font-size: $h2;
+      margin: 0;
+      @include tablet {
+        font-size: $h2-tablet;
+        text-align: center;
+      }
+      @include desktop {
+        font-size: $h2-desktop;
+      }
+    }
   }
   &__card {
     height: 67vw;

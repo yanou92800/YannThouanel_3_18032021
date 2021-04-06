@@ -76,6 +76,17 @@
       margin-bottom: 1.5vw;
       width: 37vw;
     }
+    h4 {
+      font-size: $h3;
+      margin: 0;
+      font-weight: 300;
+      @include tablet {
+        font-size: $h3-tablet;
+      }
+      @include desktop {
+        font-size: $h3-desktop;
+      }
+    }
   }
   &__text {
     margin-left: 3vw;
